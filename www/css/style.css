@@ -1,0 +1,17 @@
+.descriptive
+{
+  position: inherit;
+  align-items: center;
+  color: lightblue;
+  font-weight: 500;
+  font-size: 19px;
+  justify-content: flex-start;
+  border: none;
+}
+
+.pagebreak
+{
+border-top: dashed black 1px;
+margin-top: 20px;
+margin-bottom: 20px;
+}

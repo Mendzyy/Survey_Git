@@ -1,0 +1,167 @@
+<Survey>
+
+
+  <Question number="0">
+    <QuestionType>
+      Descriptive
+    </QuestionType>
+    <QuestionBody>
+      <![CDATA[
+      <div class="bar bar-header descriptive">Instructions for completing the questionnaire</div><br><div style="border:none">The Following pages contain phrases describing people's behaviors. Please
+       use the rating scale next to each phrase to describe how accurately each statement describes you. Describe yourself as you generally are now, not as you wish to be
+        in the future. Describe yourself as you honesty see yourself, in relation to other people you know of the same sex as you are, ans roughly your same age. So that you cab describe
+         yourself in an honest manner, your responses will be kept in absolute confidence. Please read each statement carefully and then click the circle corresponds to the
+         accuracy of the statement.</div>
+      ]]>
+    </QuestionBody>
+    <QuestionAnswer>
+      <![CDATA[<div><ion-radio>Hello</ion-radio></div>]]>
+    </QuestionAnswer>
+  </Question>
+
+  <Question number="1">
+    <QuestionType>
+      Form
+    </QuestionType>
+
+    <QuestionBody>
+      Given Name:-
+    </QuestionBody>
+
+    <QuestionAnswer>
+      <![CDATA[<div class="list">
+    <label class="item item-input item-floating-label">
+    <span class="input-label">Given Name</span>
+    <input type="text"  placeholder="First Name" />
+  </label>
+  </div>]]>
+    </QuestionAnswer>
+  </Question>
+
+
+  <Question number="2">
+    <QuestionType>
+      Form
+    </QuestionType>
+
+    <QuestionBody>
+      Surname:-
+    </QuestionBody>
+
+    <QuestionAnswer>
+      <![CDATA[<div class="list">
+    <label class="item item-input item-floating-label">
+    <span class="input-label">Surname</span>
+    <input type="text" id="surname" placeholder="Last Name" />
+  </label>
+  </div>]]>
+    </QuestionAnswer>
+  </Question>
+
+  <Question number="3">
+    <QuestionType>
+      Form
+    </QuestionType>
+
+    <QuestionBody>
+      Surname:-
+    </QuestionBody>
+
+    <QuestionAnswer>
+      <![CDATA[<div class="list">
+    <label class="item item-input item-floating-label">
+    <span class="input-label">Age</span>
+    <input type="text" id="surname" placeholder="Age" />
+  </label>
+  </div>]]>
+    </QuestionAnswer>
+  </Question>
+
+  <Question number="4">
+    <QuestionType>
+      Single Answer Radio Horizontal
+    </QuestionType>
+
+    <QuestionBody>
+      <![CDATA[
+      Please State Your Gender:-
+      ]]>
+    </QuestionBody>
+
+    <QuestionAnswer>
+
+      <Option1>
+
+        <![CDATA[
+
+      <!-- start of first Ion radio -->
+
+      <label class="item item-radio">
+      <input id="q4-o1" type="radio" name="radio-group">
+      <div class="radio-content">
+      <div class="item-content disable-pointer-events" ng-transclude="">
+      <Span> Male </span>
+      </div>
+      <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      </div>
+      </label>
+
+      <!-- End of first Ion radio -->
+
+        ]]>
+
+      </Option1>
+
+      <Option2>
+
+        <![CDATA[
+
+      <!-- start of first Ion radio -->
+
+      <label class="item item-radio">
+      <input id="q4-o2" type="radio" name="radio-group">
+      <div class="radio-content">
+      <div class="item-content disable-pointer-events" ng-transclude="">
+      <Span> Female </span>
+      </div>
+      <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      </div>
+      </label>
+
+      <!-- End of first Ion radio -->
+
+        ]]>
+      </Option2>
+
+    </QuestionAnswer>
+
+  </Question>
+
+  <Question number="5">
+
+    <QuestionType>
+      Select Option
+    </QuestionType>
+
+    <Option>
+      <![CDATA[
+      <label class="input-label">
+        <input id="q5-o" type="radio" name="radio-group">
+        <div class="radio-content">
+          <div class="item-content disable-pointer-events" ng-transclude="">
+            <Span> Female </span>
+          </div>
+          <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+        </div>
+      </label>
+      ]]>
+
+    </Option>
+
+  </Question>
+  <Pagebreak>
+    <main>
+      <![CDATA[<div class="pagebreak"></div>]]>
+    </main>
+  </Pagebreak>
+</Survey>

@@ -1,0 +1,70 @@
+<ion-view view-title="Create">
+  <ion-content>
+
+    <!-- Question 0 starts here-->
+    <div>
+      <div>
+   <div ng-bind-html="json_q0"></div>
+        <p ng-bind-html="pagebreak"></p>
+      </div>
+    </div>
+    <!--Question 0 ends here -->
+
+    <!-- Question 1 starts here-->
+    <div>
+      <div>
+        <div  ng-bind-html="json_q1"></div>
+
+      </div>
+    </div>
+    <!--Question 1 ends here -->
+
+
+    <!-- Question 2 starts here-->
+    <div>
+      <div>
+        <div ng-bind-html="json_q2"></div>
+
+      </div>
+    </div>
+    <!--Question 2 ends here -->
+
+
+    <!-- Question 3 starts here-->
+    <div>
+      <div>
+        <div ng-bind-html="json_q3"></div>
+      </div>
+      <p ng-bind-html="pagebreak"></p>
+    </div>
+    <!--Question 3 ends here -->
+
+    <!-- Question 4 starts here-->
+    <div>
+      <ion-list >
+      <ion-item style="background-color: #dddddd">
+        <ion-avatar item-left style="float: left;">
+          <img style="height: 30px;width: 30px" src="img/Numbers/Q.png" />
+        </ion-avatar>
+        <h2  class="title"  ng-bind-html="json_q4" style="font-size: 20px; padding-left: 15px"></h2>
+      </ion-item>
+    </ion-list>
+      <div>
+      <div ng-bind-html="json_q4_op1"></div>
+      <div ng-bind-html="json_q4_op2"></div>
+    </div>
+      <p ng-bind-html="pagebreak"></p>
+    </div>
+    <!-- Question 4 ends here -->
+
+    <!--  Question 5 starts here -->
+    <div>
+    <ion-item>
+<ion-label>Test Date:</ion-label>
+
+    </ion-item>
+    </div>
+    <!--  Question 5 ends here -->
+
+  </ion-content>
+</ion-view>
