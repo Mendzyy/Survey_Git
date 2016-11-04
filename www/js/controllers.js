@@ -107,15 +107,36 @@ angular.module('starter.controllers', ['ngSanitize'])
        $http.get("/data/Questions.xml").success(function (data) {
        var x2js = new X2JS();
        var jsonData = x2js.xml_str2json(data);
-       $scope.pagebreak = $sce.trustAsHtml(jsonData['Survey']['Pagebreak']['main']['__cdata']);
-       console.log(jsonData['Survey']['Pagebreak']['main']['__cdata']);
-       $scope.json_q0= $sce.trustAsHtml(jsonData['Survey']['Question'][0]['QuestionBody']['__cdata']);
-       $scope.json_q1= $sce.trustAsHtml(jsonData['Survey']['Question'][1]['QuestionAnswer']['__cdata']);
-       $scope.json_q2= $sce.trustAsHtml(jsonData['Survey']['Question'][2]['QuestionAnswer']['__cdata']);
-       $scope.json_q3= $sce.trustAsHtml(jsonData['Survey']['Question'][3]['QuestionAnswer']['__cdata']);
-       $scope.json_q4= $sce.trustAsHtml(jsonData['Survey']['Question'][4]['QuestionBody']['__cdata']);
-       $scope.json_q4_op1 = $sce.trustAsHtml(jsonData['Survey']['Question'][4]['QuestionAnswer']['Option1']['__cdata']);
-       $scope.json_q4_op2 = $sce.trustAsHtml(jsonData['Survey']['Question'][4]['QuestionAnswer']['Option2']['__cdata']);
 
+
+           // Descriptive Text
+
+           $scope.pagebreak = $sce.trustAsHtml(jsonData['Survey']['Pagebreak']['main']['__cdata']);
+
+           //Question 1
+
+           $scope.json_q0 = $sce.trustAsHtml(jsonData['Survey']['Question'][0]['QuestionBody']['__cdata']);
+
+           //Question 2
+
+           $scope.json_q1 = $sce.trustAsHtml(jsonData['Survey']['Question'][1]['QuestionAnswer']['__cdata']);
+
+           //Question 3
+
+           $scope.json_q2 = $sce.trustAsHtml(jsonData['Survey']['Question'][2]['QuestionAnswer']['__cdata']);
+
+           //Question 4
+
+           $scope.json_q3 = $sce.trustAsHtml(jsonData['Survey']['Question'][3]['QuestionAnswer']['__cdata']);
+
+           //Question 5
+
+           $scope.json_q4 = $sce.trustAsHtml(jsonData['Survey']['Question'][4]['QuestionBody']['__cdata']);
+           $scope.json_q4_op1 = $sce.trustAsHtml(jsonData['Survey']['Question'][4]['QuestionAnswer']['Option1']['__cdata']);
+           $scope.json_q4_op2 = $sce.trustAsHtml(jsonData['Survey']['Question'][4]['QuestionAnswer']['Option2']['__cdata']);
+
+           //Date Picker
+
+           $scope.dateValue = new Date();
    });
   });
