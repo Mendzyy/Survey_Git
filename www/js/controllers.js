@@ -138,5 +138,10 @@ angular.module('starter.controllers', ['ngSanitize'])
            //Date Picker
 
            $scope.dateValue = new Date();
+
+           //Country Question 6
+
+           $scope.json_q5 = $sce.trustAsHtml(jsonData['Survey']['Question'][5]['QuestionBody']);
+           $scope.json_q5_op = $sce.trustAsHtml(jsonData['Survey']['Question'][5]['QuestionAnswer']['Option']['__cdata']);
    });
   });

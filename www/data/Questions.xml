@@ -140,24 +140,35 @@
   <Question number="5">
 
     <QuestionType>
-      Select Option
+      Dropdown
     </QuestionType>
 
-    <Option>
-      <![CDATA[
-      <label class="input-label">
-        <input id="q5-o" type="radio" name="radio-group">
-        <div class="radio-content">
-          <div class="item-content disable-pointer-events" ng-transclude="">
-            <Span> Female </span>
-          </div>
-          <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
-        </div>
-      </label>
-      ]]>
+    <QuestionBody>
+      Country
+    </QuestionBody>
 
-    </Option>
+    <QuestionAnswer>
+      <Option>
+        <![CDATA[<div class="list">
 
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Country
+    </div>
+    <select>
+      <option>Germany</option>
+      <option selected>India</option>
+      <option>Austria</option>
+      <option>New Zealand</option>
+      <option>Spain</option>
+      <option>Australia</option>
+      <option>Italy</option>
+    </select>
+  </label>
+
+</div>]]>
+      </Option>
+    </QuestionAnswer>
   </Question>
   <Pagebreak>
     <main>
