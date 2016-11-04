@@ -136,12 +136,12 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.json_q4_op2 = $sce.trustAsHtml(jsonData['Survey']['Question'][4]['QuestionAnswer']['Option2']['__cdata']);
 
            //Date Picker
-
+           $scope.json_q5 = $sce.trustAsHtml(jsonData['Survey']['Question'][5]['QuestionBody']['__cdata']);
            $scope.dateValue = new Date();
 
            //Country Question 6
 
-           $scope.json_q5 = $sce.trustAsHtml(jsonData['Survey']['Question'][5]['QuestionBody']);
-           $scope.json_q5_op = $sce.trustAsHtml(jsonData['Survey']['Question'][5]['QuestionAnswer']['Option']['__cdata']);
+           $scope.json_q6 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['__cdata']);
+           $scope.json_q6_op = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Option']['__cdata']);
    });
   });

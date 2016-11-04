@@ -58,22 +58,37 @@
     <!-- Question 4 ends here -->
 
     <!--  Question 5 starts here -->
+      <ion-list>
+          <ion-item style="background-color: #dddddd">
+              <ion-avatar item-left style="float: left;">
+                  <img style="height: 30px;width: 30px" src="img/Numbers/Q.png"/>
+              </ion-avatar>
+              <h2 class="title" ng-bind-html="json_q5" style="font-size: 20px; padding-left: 15px"></h2>
+          </ion-item>
+          <ion-item>
       <div>
       <label class="item item-input">
           <span class="input-label">Date</span>
           <input type="date">
       </label>
           <p ng-bind-html="pagebreak"></p>
-
       </div>
+          </ion-item>
+      </ion-list>
       <!--  Question 5 ends here -->
 
 
       <!--  Question 6 starts here -->
       <ion-list>
+          <ion-item style="background-color: #dddddd">
+              <ion-avatar item-left style="float: left;">
+                  <img style="height: 30px;width: 30px" src="img/Numbers/Q.png"/>
+              </ion-avatar>
+              <h2 class="title" ng-bind-html="json_q6" style="font-size: 20px; padding-left: 15px"></h2>
+          </ion-item>
           <ion-item>
               <div>
-                  <div ng-bind-html="json_q5_op"></div>
+                  <div ng-bind-html="json_q6_op"></div>
               </div>
               <p ng-bind-html="pagebreak"></p>
 
@@ -82,9 +97,9 @@
       <!--  Question 6 ends here -->
 
 
-      <!--  Question 6 starts here -->
+      <!--  Question 7 starts here -->
 
-      <!--  Question 6 ends here -->
+      <!--  Question 7 ends here -->
 
   </ion-content>
 </ion-view>

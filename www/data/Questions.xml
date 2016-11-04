@@ -136,6 +136,17 @@
     </QuestionAnswer>
 
   </Question>
+  <Question>
+    <QuestionType>
+      Date Input
+    </QuestionType>
+
+    <QuestionBody>
+      <![CDATA[
+      Please State Your Date :-
+      ]]>
+    </QuestionBody>
+  </Question>
 
   <Question number="5">
 
@@ -144,7 +155,9 @@
     </QuestionType>
 
     <QuestionBody>
-      Country
+      <![CDATA[
+      Please State Your Country :-
+      ]]>
     </QuestionBody>
 
     <QuestionAnswer>
@@ -152,9 +165,6 @@
         <![CDATA[<div class="list">
 
   <label class="item item-input item-select">
-    <div class="input-label">
-      Country
-    </div>
     <select>
       <option>Germany</option>
       <option selected>India</option>
