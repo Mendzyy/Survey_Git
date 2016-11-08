@@ -156,95 +156,36 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.Next1 = function () {
                if
                (document.getElementById('fname').value == null || document.getElementById('fname').value == "") {
-                   if (document.getElementById('surname').value == null || document.getElementById('surname').value == "") {
-                       if (document.getElementById('age').value == null || document.getElementById('age').value == "") {
-                           if (document.getElementById('q4-o1').cheked == false && document.getElementById('q4-o2').checked == false) {
-                               if (document.getElementById('hdCntry').value == null || document.getElementById('hdCntry').value == "") {
-                                   var popup1 = $ionicPopup.show({
-                                       template: '<p>Please Enter Your First Name</p>',
-                                       title: 'Error!',
-                                       scope: 'Please Select the Country',
-                                       buttons: [
-                                           {
-                                               text: 'Ok',
-                                               onTap: function (e) {
-                                                   return 0;
-                                               }
-                                           }
-                                       ]
-                                   });
-
-                                   popup1.then(function (res) {
-                                       console.log('sa');
-                                   });
-
-                               }
-                               var popup2 = $ionicPopup.alert({
-                                   template: '<p>Please Enter Your First Name</p>',
-                                   title: 'Error!',
-                                   scope: 'Please select your Gender',
-                                   buttons: [
-                                       {
-                                           text: 'Ok',
-                                           onTap: function (e) {
-                                               return 0;
-                                           }
-                                       }
-                                   ]
-                               });
-                               popup2.then(function (res) {
-                                   console.log('sa');
-                               });
-                           }
-                           var popup3 = $ionicPopup.alert({
-                               template: '<p>Please Enter Your First Name</p>',
-                               title: 'Error!',
-                               scope: 'Please Enter Your Age',
-                               buttons: [
-                                   {
-                                       text: 'Ok',
-                                       onTap: function (e) {
-                                           return 0;
-                                       }
-                                   }
-                               ]
-                           });
-                           popup3.then(function (res) {
-                               console.log('sa');
-                           });
-                       }
-                       var popup4 = $ionicPopup.alert({
-                           template: '<p>Please Enter Your First Name</p>',
-                           title: 'Error!',
-                           scope: 'Please Enter the Your Last Name',
-                           buttons: [
-                               {
-                                   text: 'Ok',
-                                   onTap: function (e) {
-                                       return 0;
-                                   }
-                               }
-                           ]
-                       });
-                       popup4.then(function (res) {
-                           console.log('sa');
-                       });
-                   }
-                   var popup5 = $ionicPopup.alert({
-                       template: '<p>Please Enter Your First Name</p>',
-                       title: 'Error!',
-                       scope: 'Please Enter the Your First Name',
-                       buttons: [
-                           {
-                               text: 'Ok',
-                               onTap: function (e) {
-                                   return 0;
-                               }
-                           }
-                       ]
+                   var confirmPopup5 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Enter Your First Name'
                    });
-                   popup5.then(function (res) {
-                       console.log('sa');
+               }
+               if (document.getElementById('surname').value == null || document.getElementById('surname').value == "") {
+                   var confirmPopup4 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Enter Your Last Name'
+                   });
+
+               }
+               if (document.getElementById('age').value == null || document.getElementById('age').value == "") {
+                   var confirmPopup3 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Enter Your Age'
+                   });
+               }
+               if (document.getElementById('q4-o1').cheked == false && document.getElementById('q4-o2').checked == false) {
+                   var confirmPopup2 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select Your Gender'
+                   });
+               }
+               if (document.getElementById('hdCntry').value == null || document.getElementById('hdCntry').value == "") {
+
+
+                   var confirmPopup = $ionicPopup.alert({
+                       title: 'Consume Ice Cream',
+                       template: 'Please Select Your Country'
                    });
                }
                else {
@@ -311,5 +252,5 @@ angular.module('starter.controllers', ['ngSanitize'])
                    }
                );
            };
-   });
-  });
+       });
+    });
