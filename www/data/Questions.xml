@@ -184,6 +184,56 @@
     </QuestionAnswer>
   </Question>
 
+  <Question number="6">
+    <QuestionType>
+      Matrix
+    </QuestionType>
+
+    <QuestionBody>
+      <Statement1>
+        <![CDATA[<p>Worry About Things.</p>]]>
+      </Statement1>
+      <Statement2>
+        <![CDATA[<p>Make Friends Easily.</p>]]>
+      </Statement2>
+      <Statement3>
+        <![CDATA[<p>Have a vivid Imagination.</p>]]>
+      </Statement3>
+      <Statement4>
+        <![CDATA[<p>Trust Others.</p>]]>
+      </Statement4>
+      <Statement5>
+        <![CDATA[<p>Complete Task successfully.</p>]]>
+      </Statement5>
+      <Statement6>
+        <![CDATA[<p>Get angry easily.</p>]]>
+      </Statement6>
+      <Scale7>
+        <![CDATA[<p>Love Large Parties.</p>]]>
+      </Scale7>
+      <Statement8>
+        <![CDATA[<p>Believe in the importance of art.</p>]]>
+      </Statement8>
+    </QuestionBody>
+
+    <QuestionAnswer>
+      <Scale1>
+        <![CDATA[<p>  Very Inaccurate</p>]]>
+      </Scale1>
+      <Scale2>
+        <![CDATA[<p> Moderately Inaccurate</p>]]>
+      </Scale2>
+      <Scale3>
+        <![CDATA[<p>  Neutral</p>]]>
+      </Scale3>
+      <Scale4>
+        <![CDATA[<p>  Moderately Accurate</p>]]>
+      </Scale4>
+      <Scale5>
+        <![CDATA[<p>  Very Accurate</p>]]>
+      </Scale5>
+    </QuestionAnswer>
+  </Question>
 
   <Pagebreak>
     <main>

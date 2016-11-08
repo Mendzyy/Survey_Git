@@ -1,10 +1,86 @@
-<ion-view view-title="Browse">
+<ion-view view-title="Survey">
   <ion-content>
-    <h1>Browse</h1>
-  </ion-content>
-</ion-view>
-<ion-view view-title="Browse">
-  <ion-content>
-    <h1>Browse</h1>
+    <ion-list>
+      <ion-item>
+        <table class="matrix">
+          <thead>
+          <tr>
+
+            <td class="c1 BorderColor" width="25%">
+              <div class="WidthStrut" style="width:433px"></div>
+              &nbsp; </td>
+
+            <th scope="col" width="15%">
+              1st Scale
+            </th>
+            <th scope="col" width="15%">
+              2nd scale
+            </th>
+            <th scope="col" width="15%">
+              3rd scale
+            </th>
+            <th scope="col" width="15%">
+              4th scale
+            </th>
+            <th scope="col" width="15%">
+              5th scale
+            </th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <th>
+    <span>
+      <label>'Question 1</label>
+    </span>
+            </th>
+
+            <td><input name="mat_1" type="radio" id="mat_1_1"><label for="mat_1_1"></label></td>
+            <td><input name="mat_1" type="radio" id="mat_1_2"><label for="mat_1_2"></label></td>
+            <td><input name="mat_1" type="radio" id="mat_1_3"><label for="mat_1_3"></label></td>
+            <td><input name="mat_1" type="radio" id="mat_1_4"><label for="mat_1_4"></label></td>
+            <td><input name="mat_1" type="radio" id="mat_1_5"><label for="mat_1_5"></label></td>
+          </tr>
+
+          <tr>
+            <th>
+    <span>
+      <label>'Question 2</label>
+    </span>
+            </th>
+            <td><input name="mat_2" type="radio" id="mat_2_1"><label for="mat_2_1"></label></td>
+            <td><input name="mat_2" type="radio" id="mat_2_2"><label for="mat_2_2"></label></td>
+            <td><input name="mat_2" type="radio" id="mat_2_3"><label for="mat_2_3"></label></td>
+            <td><input name="mat_2" type="radio" id="mat_2_4"><label for="mat_2_4"></label></td>
+            <td><input name="mat_2" type="radio" id="mat_2_5"><label for="mat_2_5"></label></td>
+          </tr>
+
+          <tr>
+            <th>
+    <span>
+      <label>'Question 3</label>
+    </span>
+            </th>
+            <td><input name="mat_3" type="radio" id="mat_3_1"><label for="mat_3_1"></label></td>
+            <td><input name="mat_3" type="radio" id="mat_3_2"><label for="mat_3_2"></label></td>
+            <td><input name="mat_3" type="radio" id="mat_3_3"><label for="mat_3_3"></label></td>
+            <td><input name="mat_3" type="radio" id="mat_3_4"><label for="mat_3_4"></label></td>
+            <td><input name="mat_3" type="radio" id="mat_3_5"><label for="mat_3_5"></label></td>
+          </tr>
+          </tbody>
+        </table>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item>
+        <div>
+          <button style="float: left" class="button button-royal" ng-click="Back1()">Back</button>
+          <button style="float: right" class="button button-royal" ng-click="Next2()">Next</button>
+        </div>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

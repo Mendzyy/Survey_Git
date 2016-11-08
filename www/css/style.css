@@ -15,3 +15,88 @@ border-top: dashed black 1px;
 margin-top: 20px;
 margin-bottom: 20px;
 }
+
+.matrix {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.matrix tr:nth-of-type(odd) {
+    background: #eeeeee;
+}
+
+.matrix th {
+    background: rgba(51, 51, 51, 0.2);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.matrix td, th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    .matrix table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .matrix thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .matrix tr {
+        border: 1px solid #ccc;
+    }
+
+    .matrix td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .matrix td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before {
+        content: "Very Inaccurate";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Moderately Inaccurate";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Neutral";
+    }
+
+    td:nth-of-type(4):before {
+        content: " Moderately Accurate";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Very Accurate";
+    }
+}

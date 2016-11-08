@@ -144,6 +144,11 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.json_q6 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['__cdata']);
 
 
+           //Matrix Table
+
+
+
+
            // Next and Bak Button Setup  of page 1
 
 
@@ -160,25 +165,28 @@ angular.module('starter.controllers', ['ngSanitize'])
                        title: '<p>Error</p>',
                        template: 'Please Enter Your First Name'
                    });
+                   exit;
                }
                if (document.getElementById('surname').value == null || document.getElementById('surname').value == "") {
                    var confirmPopup4 = $ionicPopup.alert({
                        title: '<p>Error</p>',
                        template: 'Please Enter Your Last Name'
                    });
-
+                   exit;
                }
                if (document.getElementById('age').value == null || document.getElementById('age').value == "") {
                    var confirmPopup3 = $ionicPopup.alert({
                        title: '<p>Error</p>',
                        template: 'Please Enter Your Age'
                    });
+                   exit;
                }
                if (document.getElementById('q4-o1').cheked == false && document.getElementById('q4-o2').checked == false) {
                    var confirmPopup2 = $ionicPopup.alert({
                        title: '<p>Error</p>',
                        template: 'Please Select Your Gender'
                    });
+                   exit;
                }
                if (document.getElementById('hdCntry').value == null || document.getElementById('hdCntry').value == "") {
 
