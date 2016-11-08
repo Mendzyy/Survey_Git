@@ -8,12 +8,12 @@ angular.module('starter.controllers', ['ngSanitize'])
     // listen for the $ionicView.enter event:
     //$scope.$on('$ionicView.enter', function(e) {
     //});
-    var config = {
-      apiKey: "AIzaSyD0Dv0-BqaLlqyHrLip5JgeOd8waFnJKpc",
-      authDomain: "survey-9843c.firebaseapp.com",
-      databaseURL: "https://survey-9843c.firebaseio.com",
-      storageBucket: "survey-9843c.appspot.com",
-      messagingSenderId: "957749496742"
+      var config = {
+          apiKey: "AIzaSyBcwqMKs0Rdcg0KVJfWavy0Q4D-LhEtIc8",
+          authDomain: "surv-b583e.firebaseapp.com",
+          databaseURL: "https://surv-b583e.firebaseio.com",
+          storageBucket: "surv-b583e.appspot.com",
+          messagingSenderId: "253921945063"
     };
     firebase.initializeApp(config);
 
@@ -102,7 +102,7 @@ angular.module('starter.controllers', ['ngSanitize'])
     ];
   })
 
-  .controller('NewCtrl', function ($scope, $stateParams,$http,$sce) {
+    .controller('NewCtrl', function ($scope, $state, $stateParams, $http, $sce, $ionicPopup) {
 
        $http.get("/data/Questions.xml").success(function (data) {
        var x2js = new X2JS();
@@ -140,8 +140,176 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.dateValue = new Date();
 
            //Country Question 6
-
+           $scope.countries = ['India', 'Germany', 'Australia', 'Spain'];
            $scope.json_q6 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['__cdata']);
-           $scope.json_q6_op = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Option']['__cdata']);
+
+
+           // Next and Bak Button Setup  of page 1
+
+
+           var fname = null;
+           var lname = null;
+           var age = null;
+           var gender = null;
+           var country = null;
+
+           $scope.Next1 = function () {
+               if
+               (document.getElementById('fname').value == null || document.getElementById('fname').value == "") {
+                   if (document.getElementById('surname').value == null || document.getElementById('surname').value == "") {
+                       if (document.getElementById('age').value == null || document.getElementById('age').value == "") {
+                           if (document.getElementById('q4-o1').cheked == false && document.getElementById('q4-o2').checked == false) {
+                               if (document.getElementById('hdCntry').value == null || document.getElementById('hdCntry').value == "") {
+                                   var popup1 = $ionicPopup.show({
+                                       template: '<p>Please Enter Your First Name</p>',
+                                       title: 'Error!',
+                                       scope: 'Please Select the Country',
+                                       buttons: [
+                                           {
+                                               text: 'Ok',
+                                               onTap: function (e) {
+                                                   return 0;
+                                               }
+                                           }
+                                       ]
+                                   });
+
+                                   popup1.then(function (res) {
+                                       console.log('sa');
+                                   });
+
+                               }
+                               var popup2 = $ionicPopup.alert({
+                                   template: '<p>Please Enter Your First Name</p>',
+                                   title: 'Error!',
+                                   scope: 'Please select your Gender',
+                                   buttons: [
+                                       {
+                                           text: 'Ok',
+                                           onTap: function (e) {
+                                               return 0;
+                                           }
+                                       }
+                                   ]
+                               });
+                               popup2.then(function (res) {
+                                   console.log('sa');
+                               });
+                           }
+                           var popup3 = $ionicPopup.alert({
+                               template: '<p>Please Enter Your First Name</p>',
+                               title: 'Error!',
+                               scope: 'Please Enter Your Age',
+                               buttons: [
+                                   {
+                                       text: 'Ok',
+                                       onTap: function (e) {
+                                           return 0;
+                                       }
+                                   }
+                               ]
+                           });
+                           popup3.then(function (res) {
+                               console.log('sa');
+                           });
+                       }
+                       var popup4 = $ionicPopup.alert({
+                           template: '<p>Please Enter Your First Name</p>',
+                           title: 'Error!',
+                           scope: 'Please Enter the Your Last Name',
+                           buttons: [
+                               {
+                                   text: 'Ok',
+                                   onTap: function (e) {
+                                       return 0;
+                                   }
+                               }
+                           ]
+                       });
+                       popup4.then(function (res) {
+                           console.log('sa');
+                       });
+                   }
+                   var popup5 = $ionicPopup.alert({
+                       template: '<p>Please Enter Your First Name</p>',
+                       title: 'Error!',
+                       scope: 'Please Enter the Your First Name',
+                       buttons: [
+                           {
+                               text: 'Ok',
+                               onTap: function (e) {
+                                   return 0;
+                               }
+                           }
+                       ]
+                   });
+                   popup5.then(function (res) {
+                       console.log('sa');
+                   });
+               }
+               else {
+                   fname = document.getElementById('fname').value;
+                   lname = document.getElementById('surname').value;
+                   age = document.getElementById('age').value;
+                   var gender_op1 = document.getElementById('q4-o1');
+                   var gender_op2 = document.getElementById('q4-o2');
+                   if (gender_op1.checked == true) {
+                       gender = 'Male';
+                   }
+                   else if (gender_op2.checked == true) {
+                       gender = 'Female';
+                   }
+                   country = document.getElementById('hdCntry').value;
+                   $state.go('app.page2');
+               }
+           };
+           $scope.Back1 = function () {
+               $state.go('app.create')
+           };
+
+           // Next and Bak Button Setup  of page 2
+
+           $scope.Next2 = function () {
+               $state.go('app.page3');
+
+           };
+           $scope.Back2 = function () {
+               $state.go('app.page2')
+           };
+
+           // Next and Bak Button Setup  of page 3
+
+           $scope.Next3 = function () {
+               $state.go('app.page4');
+
+           };
+           $scope.Back3 = function () {
+               $state.go('app.page3')
+           };
+           // Next and Bak Button Setup  of page 4
+
+           $scope.Next4 = function () {
+               $state.go('app.page5');
+
+           };
+           $scope.Back4 = function () {
+               $state.go('app.page4')
+           };
+
+           //Submit button on last page (page 5)
+           $scope.Submit = function () {
+
+               var id = ('x' + Math.floor(Math.random() * 100 + 1) + 'Surv' + Math.floor(Math.random() * 50 + 1) + Math.floor(Math.random() * 1000 + 1));
+               var database = firebase.database();
+               database.ref('responses/' + id).set(
+                   {
+                       First_Name: fname,
+                       Last_Name: lname,
+                       Age: age,
+                       Gender: gender,
+                       Country: country
+                   }
+               );
+           };
    });
   });

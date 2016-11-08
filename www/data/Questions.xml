@@ -32,7 +32,7 @@
       <![CDATA[<div class="list">
     <label class="item item-input item-floating-label">
     <span class="input-label">Given Name</span>
-    <input type="text"  placeholder="First Name" />
+    <input type="text" id="fname"  placeholder="First Name" />
   </label>
   </div>]]>
     </QuestionAnswer>
@@ -71,7 +71,7 @@
       <![CDATA[<div class="list">
     <label class="item item-input item-floating-label">
     <span class="input-label">Age</span>
-    <input type="text" id="surname" placeholder="Age" />
+    <input type="text" id="age" placeholder="Age" />
   </label>
   </div>]]>
     </QuestionAnswer>
@@ -100,7 +100,7 @@
       <input id="q4-o1" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span> Male </span>
+      <Span id='male'> Male </span>
       </div>
       <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
       </div>
@@ -122,7 +122,7 @@
       <input id="q4-o2" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span> Female </span>
+      <Span id='female'> Female </span>
       </div>
       <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
       </div>
@@ -164,19 +164,22 @@
       <Option>
         <![CDATA[<div class="list">
 
-  <label class="item item-input item-select">
-    <select>
-      <option>Germany</option>
-      <option selected>India</option>
-      <option>Austria</option>
-      <option>New Zealand</option>
-      <option>Spain</option>
-      <option>Australia</option>
-      <option>Italy</option>
+  <label style="height:60px !important" class="item item-input item-select">
+    <select id="states" onchange="StateChanged()">
+      <option value="de" selected>Germany</option>
+      <option value="in">India</option>
+      <option value="aut">Austria</option>
+      <option value="nz">New Zealand</option>
+      <option value="s">Spain</option>
+      <option value="aus">Australia</option>
+      <option value="it">Italy</option>
     </select>
   </label>
 
-</div>]]>
+</div>
+
+
+]]>
       </Option>
     </QuestionAnswer>
   </Question>
