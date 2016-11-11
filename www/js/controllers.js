@@ -8,14 +8,7 @@ angular.module('starter.controllers', ['ngSanitize'])
     // listen for the $ionicView.enter event:
     //$scope.$on('$ionicView.enter', function(e) {
     //});
-      var config = {
-          apiKey: "AIzaSyBcwqMKs0Rdcg0KVJfWavy0Q4D-LhEtIc8",
-          authDomain: "surv-b583e.firebaseapp.com",
-          databaseURL: "https://surv-b583e.firebaseio.com",
-          storageBucket: "surv-b583e.appspot.com",
-          messagingSenderId: "253921945063"
-    };
-    firebase.initializeApp(config);
+
 
     // Form data for the login modal
     $scope.loginData = {};
@@ -92,19 +85,13 @@ angular.module('starter.controllers', ['ngSanitize'])
   })
 
   .controller('HomeCtrl', function ($scope) {
-    $scope.playlists = [
-      {title: 'Reggae', id: 1},
-      {title: 'Chill', id: 2},
-      {title: 'Dubstep', id: 3},
-      {title: 'Indie', id: 4},
-      {title: 'Rap', id: 5},
-      {title: 'Cowbell', id: 6}
-    ];
+
   })
 
     .controller('NewCtrl', function ($scope, $state, $stateParams, $http, $sce, $ionicPopup) {
 
-       $http.get("/data/Questions.xml").success(function (data) {
+
+        $http.get("/data/Questions.xml").success(function (data) {
        var x2js = new X2JS();
        var jsonData = x2js.xml_str2json(data);
 
@@ -262,7 +249,7 @@ angular.module('starter.controllers', ['ngSanitize'])
 
            //Submit button on last page (page 5)
            $scope.Submit = function () {
-
+               $scope.pressed = true;
                var id = ('x' + Math.floor(Math.random() * 100 + 1) + 'Surv' + Math.floor(Math.random() * 50 + 1) + Math.floor(Math.random() * 1000 + 1));
                var database = firebase.database();
                database.ref('responses/' + id).set(
@@ -275,5 +262,10 @@ angular.module('starter.controllers', ['ngSanitize'])
                    }
                );
            };
+
+
+            $scope.ShowData = function () {
+
+            }
        });
     });
