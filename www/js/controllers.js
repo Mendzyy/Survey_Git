@@ -144,10 +144,25 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.json_q6 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['__cdata']);
 
 
-           //Matrix Table
+           //Matrix Table //Questions
+
+           $scope.json_q7_s1 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement1']['__cdata']);
+           $scope.json_q7_s2 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement2']['__cdata']);
+           $scope.json_q7_s3 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement3']['__cdata']);
+           $scope.json_q7_s4 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement4']['__cdata']);
+           $scope.json_q7_s5 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement5']['__cdata']);
+           $scope.json_q7_s6 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement6']['__cdata']);
+           $scope.json_q7_s7 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement7']['__cdata']);
+           $scope.json_q7_s8 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement8']['__cdata']);
 
 
+           //matrix Table // Answers
 
+           $scope.json_q7_op1 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale1']['__cdata']);
+           $scope.json_q7_op2 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale2']['__cdata']);
+           $scope.json_q7_op3 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale3']['__cdata']);
+           $scope.json_q7_op4 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale4']['__cdata']);
+           $scope.json_q7_op5 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale5']['__cdata']);
 
            // Next and Bak Button Setup  of page 1
 

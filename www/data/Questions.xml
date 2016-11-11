@@ -136,7 +136,7 @@
     </QuestionAnswer>
 
   </Question>
-  <Question>
+  <Question number="5">
     <QuestionType>
       Date Input
     </QuestionType>
@@ -148,41 +148,6 @@
     </QuestionBody>
   </Question>
 
-  <Question number="5">
-
-    <QuestionType>
-      Dropdown
-    </QuestionType>
-
-    <QuestionBody>
-      <![CDATA[
-      Please State Your Country :-
-      ]]>
-    </QuestionBody>
-
-    <QuestionAnswer>
-      <Option>
-        <![CDATA[<div class="list">
-
-  <label style="height:60px !important" class="item item-input item-select">
-    <select id="states" onchange="StateChanged()">
-      <option value="de" selected>Germany</option>
-      <option value="in">India</option>
-      <option value="aut">Austria</option>
-      <option value="nz">New Zealand</option>
-      <option value="s">Spain</option>
-      <option value="aus">Australia</option>
-      <option value="it">Italy</option>
-    </select>
-  </label>
-
-</div>
-
-
-]]>
-      </Option>
-    </QuestionAnswer>
-  </Question>
 
   <Question number="6">
     <QuestionType>
@@ -208,9 +173,9 @@
       <Statement6>
         <![CDATA[<p>Get angry easily.</p>]]>
       </Statement6>
-      <Scale7>
+      <Statement7>
         <![CDATA[<p>Love Large Parties.</p>]]>
-      </Scale7>
+      </Statement7>
       <Statement8>
         <![CDATA[<p>Believe in the importance of art.</p>]]>
       </Statement8>

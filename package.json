@@ -1,7 +1,7 @@
 {
-  "name": "survey",
+  "name": "Survey Academic Project",
   "version": "1.1.1",
-  "description": "Survey: An Ionic project",
+  "description": "An Ionic Framework and Cordova project for survey attending and results gathering.",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
