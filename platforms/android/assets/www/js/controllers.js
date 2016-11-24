@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['ngSanitize'])
 
-  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicPlatform) {
+  .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -88,7 +88,7 @@ angular.module('starter.controllers', ['ngSanitize'])
 
   })
 
-    .controller('NewCtrl', function ($scope, $state, $stateParams, $http, $sce, $ionicPopup) {
+    .controller('NewCtrl', function ($scope,$state, $stateParams, $http, $sce, $ionicPopup) {
 
 
         $http.get("/data/Questions.xml").success(function (data) {

@@ -1,8 +1,29 @@
-<ion-view view-title="Home">
+<ion-view view-title="Survey">
   <ion-content>
+    <div>
+      <ion-list>
+        <ion-item style="background-color: #dddddd">
+          <ion-avatar item-left style="float: left;">
+            <img style="height: 30px;width: 30px" src="img/Numbers/Q.png"/>
+          </ion-avatar>
+          <h2 class="title" ng-bind-html="json_q9" style="font-size: 20px; padding-left: 15px"></h2>
+        </ion-item>
+      </ion-list>
+      <div>
+        <div style="text-align: center" ng-bind-html="json_q9_op1"></div>
+        <div style="text-align: center" ng-bind-html="json_q9_op2"></div>
+        <div style="text-align: center" ng-bind-html="json_q9_op3"></div>
+        <div style="text-align: center" ng-bind-html="json_q9_op4"></div>
+        <div style="text-align: center" ng-bind-html="json_q9_op5"></div>
+      </div>
+      <p ng-bind-html="pagebreak"></p>
+    </div>
     <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
+      <ion-item>
+        <div>
+          <button style="float: left" class="button button-royal" ng-click="Back3()">Back</button>
+          <button style="float: right" class="button button-royal" ng-click="Next4()">Next</button>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>

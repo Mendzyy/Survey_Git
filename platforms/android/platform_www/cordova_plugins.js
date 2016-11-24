@@ -25,6 +25,14 @@ module.exports = [
         ]
     },
     {
+        "id": "ionic-plugin-deploy.IonicDeploy",
+        "file": "plugins/ionic-plugin-deploy/www/ionicdeploy.js",
+        "pluginId": "ionic-plugin-deploy",
+        "clobbers": [
+            "IonicDeploy"
+        ]
+    },
+    {
         "id": "ionic-plugin-keyboard.keyboard",
         "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
         "pluginId": "ionic-plugin-keyboard",
@@ -38,12 +46,13 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-console": "1.0.4",
+    "cordova-plugin-crosswalk-webview": "2.1.0",
     "cordova-plugin-device": "1.1.3",
     "cordova-plugin-splashscreen": "4.0.0",
     "cordova-plugin-statusbar": "2.2.0",
     "cordova-plugin-whitelist": "1.3.0",
-    "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-crosswalk-webview": "2.1.0"
+    "ionic-plugin-deploy": "0.6.5",
+    "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
 });

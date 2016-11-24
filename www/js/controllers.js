@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['ngSanitize'])
 
-  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicPlatform) {
+    .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -131,7 +131,67 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.json_q6 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['__cdata']);
 
 
-           //Matrix Table //Questions
+            //Matrix Table Radio Button Structure
+
+
+            // Matrix Table Radio Button Structure 1
+            $scope.json_mat0_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][0]['r1']['__cdata']);
+            $scope.json_mat0_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][0]['r2']['__cdata']);
+            $scope.json_mat0_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][0]['r3']['__cdata']);
+            $scope.json_mat0_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][0]['r4']['__cdata']);
+            $scope.json_mat0_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][0]['r5']['__cdata']);
+
+            // Matrix Table Radio Button Structure 2
+            $scope.json_mat1_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][1]['r1']['__cdata']);
+            $scope.json_mat1_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][1]['r2']['__cdata']);
+            $scope.json_mat1_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][1]['r3']['__cdata']);
+            $scope.json_mat1_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][1]['r4']['__cdata']);
+            $scope.json_mat1_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][1]['r5']['__cdata']);
+
+            //Matrix Table Radio Button Structure 3
+            $scope.json_mat2_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][2]['r1']['__cdata']);
+            $scope.json_mat2_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][2]['r2']['__cdata']);
+            $scope.json_mat2_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][2]['r3']['__cdata']);
+            $scope.json_mat2_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][2]['r4']['__cdata']);
+            $scope.json_mat2_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][2]['r5']['__cdata']);
+
+            //Matrix Table Radio Button Structure 4
+            $scope.json_mat3_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][3]['r1']['__cdata']);
+            $scope.json_mat3_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][3]['r2']['__cdata']);
+            $scope.json_mat3_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][3]['r3']['__cdata']);
+            $scope.json_mat3_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][3]['r4']['__cdata']);
+            $scope.json_mat3_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][3]['r5']['__cdata']);
+
+            //Matrix Table Radio Button Structure 5
+            $scope.json_mat4_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][4]['r1']['__cdata']);
+            $scope.json_mat4_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][4]['r2']['__cdata']);
+            $scope.json_mat4_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][4]['r3']['__cdata']);
+            $scope.json_mat4_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][4]['r4']['__cdata']);
+            $scope.json_mat4_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][4]['r5']['__cdata']);
+
+            //Matrix Table Radio Button Structure 6
+            $scope.json_mat5_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][5]['r1']['__cdata']);
+            $scope.json_mat5_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][5]['r2']['__cdata']);
+            $scope.json_mat5_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][5]['r3']['__cdata']);
+            $scope.json_mat5_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][5]['r4']['__cdata']);
+            $scope.json_mat5_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][5]['r5']['__cdata']);
+
+            //Matrix Table Radio Button Structure 7
+            $scope.json_mat6_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][6]['r1']['__cdata']);
+            $scope.json_mat6_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][6]['r2']['__cdata']);
+            $scope.json_mat6_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][6]['r3']['__cdata']);
+            $scope.json_mat6_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][6]['r4']['__cdata']);
+            $scope.json_mat6_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][6]['r5']['__cdata']);
+
+            //Matrix Table Radio Button Structure 8
+            $scope.json_mat7_r1 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][7]['r1']['__cdata']);
+            $scope.json_mat7_r2 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][7]['r2']['__cdata']);
+            $scope.json_mat7_r3 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][7]['r3']['__cdata']);
+            $scope.json_mat7_r4 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][7]['r4']['__cdata']);
+            $scope.json_mat7_r5 = $sce.trustAsHtml(jsonData['Survey']['RadiosForMatrix']['Structure'][7]['r5']['__cdata']);
+
+
+            //Matrix Table //Questions Page 2
 
            $scope.json_q7_s1 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement1']['__cdata']);
            $scope.json_q7_s2 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement2']['__cdata']);
@@ -143,6 +203,18 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.json_q7_s8 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionBody']['Statement8']['__cdata']);
 
 
+            //Matrix Table //Questions Page 3
+
+            $scope.json_q8_s1 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement1']['__cdata']);
+            $scope.json_q8_s2 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement2']['__cdata']);
+            $scope.json_q8_s3 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement3']['__cdata']);
+            $scope.json_q8_s4 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement4']['__cdata']);
+            $scope.json_q8_s5 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement5']['__cdata']);
+            $scope.json_q8_s6 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement6']['__cdata']);
+            $scope.json_q8_s7 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement7']['__cdata']);
+            $scope.json_q8_s8 = $sce.trustAsHtml(jsonData['Survey']['Question'][7]['QuestionBody']['Statement8']['__cdata']);
+
+
            //matrix Table // Answers
 
            $scope.json_q7_op1 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale1']['__cdata']);
@@ -150,6 +222,19 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.json_q7_op3 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale3']['__cdata']);
            $scope.json_q7_op4 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale4']['__cdata']);
            $scope.json_q7_op5 = $sce.trustAsHtml(jsonData['Survey']['Question'][6]['QuestionAnswer']['Scale5']['__cdata']);
+
+
+            // Page 4 Question 1 Radio
+
+
+            $scope.json_q9 = $sce.trustAsHtml(jsonData['Survey']['Question'][8]['QuestionBody']['__cdata']);
+            $scope.json_q9_op1 = $sce.trustAsHtml(jsonData['Survey']['Question'][8]['QuestionAnswer']['Option1']['__cdata']);
+            $scope.json_q9_op2 = $sce.trustAsHtml(jsonData['Survey']['Question'][8]['QuestionAnswer']['Option2']['__cdata']);
+            $scope.json_q9_op3 = $sce.trustAsHtml(jsonData['Survey']['Question'][8]['QuestionAnswer']['Option3']['__cdata']);
+            $scope.json_q9_op4 = $sce.trustAsHtml(jsonData['Survey']['Question'][8]['QuestionAnswer']['Option4']['__cdata']);
+            $scope.json_q9_op5 = $sce.trustAsHtml(jsonData['Survey']['Question'][8]['QuestionAnswer']['Option5']['__cdata']);
+
+
 
            // Next and Bak Button Setup  of page 1
 
@@ -159,6 +244,22 @@ angular.module('starter.controllers', ['ngSanitize'])
            var age = null;
            var gender = null;
            var country = null;
+            var p2_m1 = null;
+            var p2_m2 = null;
+            var p2_m3 = null;
+            var p2_m4 = null;
+            var p2_m5 = null;
+            var p2_m6 = null;
+            var p2_m7 = null;
+            var p2_m8 = null;
+            var p3_m1 = null;
+            var p3_m2 = null;
+            var p3_m3 = null;
+            var p3_m4 = null;
+            var p3_m5 = null;
+            var p3_m6 = null;
+            var p3_m7 = null;
+            var p3_m8 = null;
 
            $scope.Next1 = function () {
                if
@@ -183,7 +284,7 @@ angular.module('starter.controllers', ['ngSanitize'])
                    });
                    exit;
                }
-               if (document.getElementById('q4-o1').cheked == false && document.getElementById('q4-o2').checked == false) {
+               if (document.getElementById('q4-o1').checked == false && document.getElementById('q4-o2').checked == false) {
                    var confirmPopup2 = $ionicPopup.alert({
                        title: '<p>Error</p>',
                        template: 'Please Select Your Gender'
@@ -214,14 +315,175 @@ angular.module('starter.controllers', ['ngSanitize'])
                    $state.go('app.page2');
                }
            };
-           $scope.Back1 = function () {
+
+
+            $scope.Back1 = function () {
                $state.go('app.create')
            };
 
            // Next and Bak Button Setup  of page 2
 
            $scope.Next2 = function () {
-               $state.go('app.page3');
+
+               // Page 2 Question 1
+               if (document.getElementById('mat_1_1').checked == false && document.getElementById('mat_1_2').checked == false
+                   && document.getElementById('mat_1_3').checked == false && document.getElementById('mat_1_4').checked == false && document.getElementById('mat_1_5').checked == false) {
+                   var confirmPopup_mat_1 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in First row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_1_' + num).checked == true) {
+                           p2_m1 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m1);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 2
+               if (document.getElementById('mat_2_1').checked == false && document.getElementById('mat_2_2').checked == false
+                   && document.getElementById('mat_2_3').checked == false && document.getElementById('mat_2_4').checked == false && document.getElementById('mat_2_5').checked == false) {
+                   var confirmPopup_mat_2 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Second row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_2_' + num).checked == true) {
+                           p2_m2 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m2);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 3
+               if (document.getElementById('mat_3_1').checked == false && document.getElementById('mat_3_2').checked == false
+                   && document.getElementById('mat_3_3').checked == false && document.getElementById('mat_3_4').checked == false && document.getElementById('mat_3_5').checked == false) {
+                   var confirmPopup_mat_3 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Third row'
+                   });
+                   exit;
+               }
+               else {
+
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_3_' + num).checked == true) {
+                           p2_m3 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m3);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 4
+
+               if (document.getElementById('mat_4_1').checked == false && document.getElementById('mat_4_2').checked == false
+                   && document.getElementById('mat_4_3').checked == false && document.getElementById('mat_4_4').checked == false && document.getElementById('mat_4_5').checked == false) {
+                   var confirmPopup_mat_4 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Fourth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_4_' + num).checked == true) {
+                           p2_m4 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m4);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 5
+
+               if (document.getElementById('mat_5_1').checked == false && document.getElementById('mat_5_2').checked == false
+                   && document.getElementById('mat_5_3').checked == false && document.getElementById('mat_5_4').checked == false && document.getElementById('mat_5_5').checked == false) {
+                   var confirmPopup_mat_5 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Fifth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_5_' + num).checked == true) {
+                           p2_m5 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m5);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 6
+
+               if (document.getElementById('mat_6_1').checked == false && document.getElementById('mat_6_2').checked == false
+                   && document.getElementById('mat_6_3').checked == false && document.getElementById('mat_6_4').checked == false && document.getElementById('mat_6_5').checked == false) {
+                   var confirmPopup_mat_6 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Sixth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_6_' + num).checked == true) {
+                           p2_m6 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m6);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 7
+
+               if (document.getElementById('mat_7_1').checked == false && document.getElementById('mat_7_2').checked == false
+                   && document.getElementById('mat_7_3').checked == false && document.getElementById('mat_7_4').checked == false && document.getElementById('mat_7_5').checked == false) {
+                   var confirmPopup_mat_7 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Seventh row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_7_' + num).checked == true) {
+                           p2_m7 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m7);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 8
+
+               if (document.getElementById('mat_8_1').checked == false && document.getElementById('mat_8_2').checked == false
+                   && document.getElementById('mat_8_3').checked == false && document.getElementById('mat_8_4').checked == false && document.getElementById('mat_8_5').checked == false) {
+                   var confirmPopup_mat_8 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Eighth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_8_' + num).checked == true) {
+                           p2_m8 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p2_m8);
+                       }
+
+                   }
+                   $state.go('app.page3');
+               }
+
 
            };
            $scope.Back2 = function () {
@@ -229,11 +491,178 @@ angular.module('starter.controllers', ['ngSanitize'])
            };
 
            // Next and Bak Button Setup  of page 3
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////
+
 
            $scope.Next3 = function () {
-               $state.go('app.page4');
+
+               // Page 3 Question 1
+               if (document.getElementById('mat_1_1').checked == false && document.getElementById('mat_1_2').checked == false
+                   && document.getElementById('mat_1_3').checked == false && document.getElementById('mat_1_4').checked == false && document.getElementById('mat_1_5').checked == false) {
+                   var confirmPopup_mat_1 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in First row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_1_' + num).checked == true) {
+                           p3_m1 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m1);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 2
+               if (document.getElementById('mat_2_1').checked == false && document.getElementById('mat_2_2').checked == false
+                   && document.getElementById('mat_2_3').checked == false && document.getElementById('mat_2_4').checked == false && document.getElementById('mat_2_5').checked == false) {
+                   var confirmPopup_mat_2 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Second row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_2_' + num).checked == true) {
+                           p3_m2 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m2);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 3
+               if (document.getElementById('mat_3_1').checked == false && document.getElementById('mat_3_2').checked == false
+                   && document.getElementById('mat_3_3').checked == false && document.getElementById('mat_3_4').checked == false && document.getElementById('mat_3_5').checked == false) {
+                   var confirmPopup_mat_3 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Third row'
+                   });
+                   exit;
+               }
+               else {
+
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_3_' + num).checked == true) {
+                           p3_m3 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m3);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 4
+
+               if (document.getElementById('mat_4_1').checked == false && document.getElementById('mat_4_2').checked == false
+                   && document.getElementById('mat_4_3').checked == false && document.getElementById('mat_4_4').checked == false && document.getElementById('mat_4_5').checked == false) {
+                   var confirmPopup_mat_4 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Fourth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_4_' + num).checked == true) {
+                           p3_m4 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m4);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 5
+
+               if (document.getElementById('mat_5_1').checked == false && document.getElementById('mat_5_2').checked == false
+                   && document.getElementById('mat_5_3').checked == false && document.getElementById('mat_5_4').checked == false && document.getElementById('mat_5_5').checked == false) {
+                   var confirmPopup_mat_5 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Fifth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_5_' + num).checked == true) {
+                           p3_m5 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m5);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 6
+
+               if (document.getElementById('mat_6_1').checked == false && document.getElementById('mat_6_2').checked == false
+                   && document.getElementById('mat_6_3').checked == false && document.getElementById('mat_6_4').checked == false && document.getElementById('mat_6_5').checked == false) {
+                   var confirmPopup_mat_6 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Sixth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_6_' + num).checked == true) {
+                           p3_m6 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m6);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 7
+
+               if (document.getElementById('mat_7_1').checked == false && document.getElementById('mat_7_2').checked == false
+                   && document.getElementById('mat_7_3').checked == false && document.getElementById('mat_7_4').checked == false && document.getElementById('mat_7_5').checked == false) {
+                   var confirmPopup_mat_7 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Seventh row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_7_' + num).checked == true) {
+                           p3_m7 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m7);
+                       }
+
+                   }
+               }
+
+               // Page 2 Question 8
+
+               if (document.getElementById('mat_8_1').checked == false && document.getElementById('mat_8_2').checked == false
+                   && document.getElementById('mat_8_3').checked == false && document.getElementById('mat_8_4').checked == false && document.getElementById('mat_8_5').checked == false) {
+                   var confirmPopup_mat_8 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select option in Eighth row'
+                   });
+                   exit;
+               }
+               else {
+                   for (var num = 1; num < 6; num++) {
+                       if (document.getElementById('mat_8_' + num).checked == true) {
+                           p3_m8 = document.getElementById('json_q7_op' + num).children[0].textContent;
+                           console.log(p3_m8);
+                       }
+
+                   }
+                   $state.go('app.page4');
+               }
 
            };
+
            $scope.Back3 = function () {
                $state.go('app.page3')
            };
@@ -258,7 +687,23 @@ angular.module('starter.controllers', ['ngSanitize'])
                        Last_Name: lname,
                        Age: age,
                        Gender: gender,
-                       Country: country
+                       Country: country,
+                       p2m1: p2_m1,
+                       p2m2: p2_m2,
+                       p2m3: p2_m3,
+                       p2m4: p2_m4,
+                       p2m5: p2_m5,
+                       p2m6: p2_m6,
+                       p2m7: p2_m7,
+                       p2m8: p2_m8,
+                       p3m1: p3_m1,
+                       p3m2: p3_m2,
+                       p3m3: p3_m3,
+                       p3m4: p3_m4,
+                       p3m5: p3_m5,
+                       p3m6: p3_m6,
+                       p3m7: p3_m7,
+                       p3m8: p3_m8
                    }
                );
            };

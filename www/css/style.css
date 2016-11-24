@@ -20,6 +20,7 @@ margin-bottom: 20px;
 
     width: 100%;
     border-collapse: collapse;
+    line-height: 45px;
 
 }
 
@@ -39,8 +40,8 @@ margin-bottom: 20px;
     text-align: center;
 }
 
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and
+(min-device-width: 320px) and (max-device-width: 480px) {
 
     /* Force table to not be like tables anymore */
     .matrix table, thead, tbody, th, td, tr {

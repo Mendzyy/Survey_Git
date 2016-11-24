@@ -28,21 +28,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           messagingSenderId: "253921945063"
       };
       firebase.initializeApp(config);
-
-      firebase.auth().onAuthStateChanged(function (user) {
-          if (user) {
-              $rootScope.modal.hide();
-              $rootScope.modal2.hide();
-          }
-          else {
-              $scope.modal.show();
-          }
-      });
   });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
+
+    $stateProvider
 
     .state('app', {
     url: '/app',

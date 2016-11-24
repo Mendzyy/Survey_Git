@@ -100,9 +100,9 @@
       <input id="q4-o1" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span id='male'> Male </span>
+      <Span id='male'>Male</span>
       </div>
-      <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      <i class="radio-icon disable-pointer-events icon ion-man"></i>
       </div>
       </label>
 
@@ -122,9 +122,9 @@
       <input id="q4-o2" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span id='female'> Female </span>
+      <Span id='female'>Female</span>
       </div>
-      <i class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      <i class="radio-icon disable-pointer-events icon ion-woman"></i>
       </div>
       </label>
 
@@ -136,6 +136,8 @@
     </QuestionAnswer>
 
   </Question>
+
+
   <Question number="5">
     <QuestionType>
       Date Input
@@ -183,23 +185,326 @@
 
     <QuestionAnswer>
       <Scale1>
-        <![CDATA[<p>  Very Inaccurate</p>]]>
+        <![CDATA[<p>Very Inaccurate</p>]]>
       </Scale1>
       <Scale2>
-        <![CDATA[<p> Moderately Inaccurate</p>]]>
+        <![CDATA[<p>Moderately Inaccurate</p>]]>
       </Scale2>
       <Scale3>
-        <![CDATA[<p>  Neutral</p>]]>
+        <![CDATA[<p>Neutral</p>]]>
       </Scale3>
       <Scale4>
-        <![CDATA[<p>  Moderately Accurate</p>]]>
+        <![CDATA[<p>Moderately Accurate</p>]]>
       </Scale4>
       <Scale5>
-        <![CDATA[<p>  Very Accurate</p>]]>
+        <![CDATA[<p>Very Accurate</p>]]>
       </Scale5>
     </QuestionAnswer>
   </Question>
 
+  <Question number="7">
+    <QuestionType>
+      Matrix
+    </QuestionType>
+
+    <QuestionBody>
+      <Statement1>
+        <![CDATA[<p>Would never cheat on my taxes.</p>]]>
+      </Statement1>
+      <Statement2>
+        <![CDATA[<p>Like order.</p>]]>
+      </Statement2>
+      <Statement3>
+        <![CDATA[<p>Often feel blue.</p>]]>
+      </Statement3>
+      <Statement4>
+        <![CDATA[<p>Take charge.</p>]]>
+      </Statement4>
+      <Statement5>
+        <![CDATA[<p>Am easily intimidated.</p>]]>
+      </Statement5>
+      <Statement6>
+        <![CDATA[<p>Experience my emotions intensely.</p>]]>
+      </Statement6>
+      <Statement7>
+        <![CDATA[<p>Make people feel welcome.</p>]]>
+      </Statement7>
+      <Statement8>
+        <![CDATA[<p>Try to follow the rules.</p>]]>
+      </Statement8>
+    </QuestionBody>
+
+  </Question>
+
+
+  <Question number="8">
+    <QuestionType>
+      Single Answer Radio Horizontal
+    </QuestionType>
+
+    <QuestionBody>
+      <![CDATA[
+      Am always busy.
+      ]]>
+    </QuestionBody>
+
+    <QuestionAnswer>
+
+      <Option1>
+
+        <![CDATA[
+
+      <!-- start of first Ion radio -->
+
+         <label class="item item-radio">
+      <input id="q8-o1" type="radio" name="radio-group">
+      <div class="radio-content">
+      <div class="item-content disable-pointer-events" ng-transclude="">
+      <Span id='female'>Very Inaccurate</span>
+      </div>
+      <i style="color:red" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      </div>
+      </label>
+
+
+      <!-- End of first Ion radio -->
+
+        ]]>
+
+      </Option1>
+
+      <Option2>
+
+        <![CDATA[
+
+      <!-- start of 2nd Ion radio -->
+
+         <label class="item item-radio">
+      <input id="q8-o2" type="radio" name="radio-group">
+      <div class="radio-content">
+      <div class="item-content disable-pointer-events" ng-transclude="">
+      <Span id='female'>Moderately Inaccurate</span>
+      </div>
+      <i style="color:lightpink" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      </div>
+      </label>
+
+
+      <!-- End of 2nd Ion radio -->
+
+        ]]>
+      </Option2>
+
+      <Option3>
+
+        <![CDATA[
+
+      <!-- start of 3rd Ion radio -->
+
+         <label class="item item-radio">
+      <input id="q8-o3" type="radio" name="radio-group">
+      <div class="radio-content">
+      <div class="item-content disable-pointer-events" ng-transclude="">
+      <Span id='female'>Neutral</span>
+      </div>
+      <i style="color:yellow" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      </div>
+      </label>
+
+
+      <!-- End of 3rd Ion radio -->
+
+        ]]>
+      </Option3>
+
+      <Option4>
+
+        <![CDATA[
+
+      <!-- start of 4th Ion radio -->
+
+         <label class="item item-radio">
+      <input id="q8-o4" type="radio" name="radio-group">
+      <div class="radio-content">
+      <div class="item-content disable-pointer-events" ng-transclude="">
+      <Span id='female'>Moderately Accurate</span>
+      </div>
+      <i style="color:lightgreen" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      </div>
+      </label>
+
+
+      <!-- End of 4th Ion radio -->
+
+        ]]>
+      </Option4>
+
+      <Option5>
+
+        <![CDATA[
+
+      <!-- start of 5th Ion radio -->
+
+         <label class="item item-radio">
+      <input id="q8-o5" type="radio" name="radio-group">
+      <div class="radio-content">
+      <div class="item-content disable-pointer-events" ng-transclude="">
+      <Span id='female'>Very Accurate</span>
+      </div>
+      <i style="color:green" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
+      </div>
+      </label>
+
+
+      <!-- End of 5th Ion radio -->
+
+        ]]>
+      </Option5>
+
+
+    </QuestionAnswer>
+
+  </Question>
+
+
+  <RadiosForMatrix>
+    <Structure number="1">
+      <r1>
+        <![CDATA[<input name="mat_1" type="radio" id="mat_1_1"><label for="mat_1_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_1" type="radio" id="mat_1_2"><label for="mat_1_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_1" type="radio" id="mat_1_3"><label for="mat_1_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_1" type="radio" id="mat_1_4"><label for="mat_1_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_1" type="radio" id="mat_1_5"><label for="mat_1_5"></label>]]>
+      </r5>
+    </Structure>
+    <Structure number="2">
+      <r1>
+        <![CDATA[<input name="mat_2" type="radio" id="mat_2_1"><label for="mat_2_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_2" type="radio" id="mat_2_2"><label for="mat_2_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_2" type="radio" id="mat_2_3"><label for="mat_2_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_2" type="radio" id="mat_2_4"><label for="mat_2_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_2" type="radio" id="mat_2_5"><label for="mat_2_5"></label>]]>
+      </r5>
+    </Structure>
+    <Structure number="3">
+      <r1>
+        <![CDATA[<input name="mat_3" type="radio" id="mat_3_1"><label for="mat_3_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_3" type="radio" id="mat_3_2"><label for="mat_3_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_3" type="radio" id="mat_3_3"><label for="mat_3_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_3" type="radio" id="mat_3_4"><label for="mat_3_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_3" type="radio" id="mat_3_5"><label for="mat_3_5"></label>]]>
+      </r5>
+    </Structure>
+    <Structure number="4">
+      <r1>
+        <![CDATA[<input name="mat_4" type="radio" id="mat_4_1"><label for="mat_4_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_4" type="radio" id="mat_4_2"><label for="mat_4_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_4" type="radio" id="mat_4_3"><label for="mat_4_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_4" type="radio" id="mat_4_4"><label for="mat_4_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_4" type="radio" id="mat_4_5"><label for="mat_4_5"></label>]]>
+      </r5>
+    </Structure>
+    <Structure number="5">
+      <r1>
+        <![CDATA[<input name="mat_5" type="radio" id="mat_5_1"><label for="mat_5_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_5" type="radio" id="mat_5_2"><label for="mat_5_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_5" type="radio" id="mat_5_3"><label for="mat_5_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_5" type="radio" id="mat_5_4"><label for="mat_5_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_5" type="radio" id="mat_5_5"><label for="mat_5_5"></label>]]>
+      </r5>
+    </Structure>
+    <Structure number="6">
+      <r1>
+        <![CDATA[<input name="mat_6" type="radio" id="mat_6_1"><label for="mat_6_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_6" type="radio" id="mat_6_2"><label for="mat_6_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_6" type="radio" id="mat_6_3"><label for="mat_6_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_6" type="radio" id="mat_6_4"><label for="mat_6_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_6" type="radio" id="mat_6_5"><label for="mat_6_5"></label>]]>
+      </r5>
+    </Structure>
+    <Structure number="7">
+      <r1>
+        <![CDATA[<input name="mat_7" type="radio" id="mat_7_1"><label for="mat_7_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_7" type="radio" id="mat_7_2"><label for="mat_7_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_7" type="radio" id="mat_7_3"><label for="mat_7_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_7" type="radio" id="mat_7_4"><label for="mat_7_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_7" type="radio" id="mat_7_5"><label for="mat_7_5"></label>]]>
+      </r5>
+    </Structure>
+    <Structure number="8">
+      <r1>
+        <![CDATA[<input name="mat_8" type="radio" id="mat_8_1"><label for="mat_8_1"></label>]]>
+      </r1>
+      <r2>
+        <![CDATA[<input name="mat_8" type="radio" id="mat_8_2"><label for="mat_8_2"></label>]]>
+      </r2>
+      <r3>
+        <![CDATA[<input name="mat_8" type="radio" id="mat_8_3"><label for="mat_8_3"></label>]]>
+      </r3>
+      <r4>
+        <![CDATA[<input name="mat_8" type="radio" id="mat_8_4"><label for="mat_8_4"></label>]]>
+      </r4>
+      <r5>
+        <![CDATA[<input name="mat_8" type="radio" id="mat_8_5"><label for="mat_8_5"></label>]]>
+      </r5>
+    </Structure>
+  </RadiosForMatrix>
   <Pagebreak>
     <main>
       <![CDATA[<div class="pagebreak"></div>]]>
