@@ -1,19 +1,18 @@
-.descriptive
-{
-  position: inherit;
-  align-items: center;
-  color: lightblue;
-  font-weight: 500;
-  font-size: 19px;
-  justify-content: flex-start;
-  border: none;
+
+.descriptive {
+    position: inherit;
+    align-items: center;
+    color: lightblue;
+    font-weight: 500;
+    font-size: 19px;
+    justify-content: flex-start;
+    border: none;
 }
 
-.pagebreak
-{
-border-top: dashed black 1px;
-margin-top: 20px;
-margin-bottom: 20px;
+.pagebreak {
+    border-top: dashed black 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .matrix {
@@ -40,6 +39,59 @@ margin-bottom: 20px;
     text-align: center;
 }
 
+option {
+    color: black;
+    font-weight: 600;
+    background-color: ghostwhite;
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+}
+
+#cntryy {
+    color: black;
+    background-color: ghostwhite;
+    max-width: 170px;
+    min-width: 150px;
+    min-height: 40px;
+    max-height: 70px;
+    border: 2px solid cornflowerblue;
+    border-radius: 11px;
+    padding: 0 0 0 40px;
+}
+
+@-webkit-keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
 @media only screen and
 (min-device-width: 320px) and (max-device-width: 480px) {
 
@@ -100,4 +152,20 @@ margin-bottom: 20px;
     td:nth-of-type(5):before {
         content: "Very Accurate";
     }
+}
+
+.rad {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.rad_checked {
+    width: 22px;
+    height: 22px;
 }

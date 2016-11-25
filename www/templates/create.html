@@ -68,8 +68,8 @@
             <ion-item>
                 <div>
                     <label class="item item-input">
-                        <span class="input-label">Date</span>
-                        <input ng-model="date" type="date">
+                        <span>Date</span>
+                        <input ng-model="date" type="date" data-role="date">
                     </label>
                     <p ng-bind-html="pagebreak"></p>
                 </div>
@@ -87,9 +87,11 @@
                 <h2 class="title" ng-bind-html="json_q6" style="font-size: 20px; padding-left: 15px"></h2>
             </ion-item>
             <ion-item>
-                <div ng-controller="HomeCtrl">
+                <div style="text-align: center" ng-controller="HomeCtrl">
                     <!--  <div ng-bind-html="json_q6_op"></div>  -->
-                    <select ng-options="item for item in countries" ng-model="cntry">
+                    <select class="bounceInLeft animated" id="cntryy" ng-options="item for item in countries"
+                            ng-model="cntry">
+                        <label for="cntryy" ng-repeat="item in countries">{{item}}</label>
                     </select>
                     <input type="hidden" value="{{cntry}}" id="hdCntry">
                 </div>
