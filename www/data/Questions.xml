@@ -71,7 +71,7 @@
       <![CDATA[<div class="list">
     <label class="item item-input item-floating-label">
     <span class="input-label">Age</span>
-    <input type="text" id="age" placeholder="Age" />
+    <input type="number" id="age" placeholder="Age" />
   </label>
   </div>]]>
     </QuestionAnswer>

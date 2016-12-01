@@ -90,7 +90,6 @@ angular.module('starter.controllers', ['ngSanitize'])
 
     .controller('NewCtrl', function ($scope, $state, $stateParams, $http, $sce, $ionicPopup) {
 
-
         $http.get("/data/Questions.xml").success(function (data) {
        var x2js = new X2JS();
        var jsonData = x2js.xml_str2json(data);
@@ -302,6 +301,7 @@ angular.module('starter.controllers', ['ngSanitize'])
             var age = null;
             var gender = null;
             var country = null;
+            var date = null;
             var p2_m1 = null;
             var p2_m2 = null;
             var p2_m3 = null;
@@ -342,10 +342,24 @@ angular.module('starter.controllers', ['ngSanitize'])
                    });
                    exit;
                }
+               if (document.getElementById('age').value < 1 || document.getElementById('age').value > 100) {
+                   var confirmPopup3_1 = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'The age must be a number between 1 and 100'
+                   });
+                   exit;
+               }
                if (document.getElementById('q4-o1').checked == false && document.getElementById('q4-o2').checked == false) {
                    var confirmPopup2 = $ionicPopup.alert({
                        title: '<p>Error</p>',
                        template: 'Please Select Your Gender'
+                   });
+                   exit;
+               }
+               if (document.getElementById('date_date').value == null || document.getElementById('date_date').value == "") {
+                   var confirmPopup2_date = $ionicPopup.alert({
+                       title: '<p>Error</p>',
+                       template: 'Please Select Your Date'
                    });
                    exit;
                }
@@ -370,6 +384,7 @@ angular.module('starter.controllers', ['ngSanitize'])
                        gender = 'Female';
                    }
                    country = document.getElementById('hdCntry').value;
+                   date = document.getElementById('date_date').value;
                    $state.go('app.page2');
                }
            };
@@ -732,17 +747,16 @@ angular.module('starter.controllers', ['ngSanitize'])
            // Next and Bak Button Setup  of page 4
 
            $scope.Next4 = function () {
-               $state.go('app.page5');
+
 
            };
            $scope.Back4 = function () {
                $state.go('app.page4')
            };
-
+            var id = ('x' + Math.floor(Math.random() * 100 + 1) + 'Surv' + Math.floor(Math.random() * 50 + 1) + Math.floor(Math.random() * 1000 + 1));
            //Submit button on last page (page 5)
            $scope.Submit = function () {
                $scope.pressed = true;
-               var id = ('x' + Math.floor(Math.random() * 100 + 1) + 'Surv' + Math.floor(Math.random() * 50 + 1) + Math.floor(Math.random() * 1000 + 1));
                var database = firebase.database();
                database.ref('responses/' + id).set(
                    {
@@ -751,6 +765,7 @@ angular.module('starter.controllers', ['ngSanitize'])
                        Age: age,
                        Gender: gender,
                        Country: country,
+                       Date: date,
                        p2m1: p2_m1,
                        p2m2: p2_m2,
                        p2m3: p2_m3,
@@ -769,11 +784,40 @@ angular.module('starter.controllers', ['ngSanitize'])
                        p3m8: p3_m8
                    }
                );
+               $state.go('app.page5');
            };
 
 
             $scope.ShowData = function () {
-
+                var div = document.getElementById('showdata');
+                var data = firebase.database();
+                var fname_r = null;
+                data.ref('responses/' + id).once('value').then(function (snapshot) {
+                    fname_r = snapshot.val().First_Name;
+                    var lname_r = snapshot.val().Last_Name;
+                    var age_r = snapshot.val().Age;
+                    var gender_r = snapshot.val().Gender;
+                    var cntry_r = snapshot.val().Country;
+                    var date_r = snapshot.val().Date;
+                    var p2m1_r = snapshot.val().p2m1;
+                    var p2m2_r = snapshot.val().p2m2;
+                    var p2m3_r = snapshot.val().p2m3;
+                    var p2m4_r = snapshot.val().p2m4;
+                    var p2m5_r = snapshot.val().p2m5;
+                    var p2m6_r = snapshot.val().p2m6;
+                    var p2m7_r = snapshot.val().p2m7;
+                    var p2m8_r = snapshot.val().p2m8;
+                    var p3m1_r = snapshot.val().p3m1;
+                    var p3m2_r = snapshot.val().p3m2;
+                    var p3m3_r = snapshot.val().p3m3;
+                    var p3m4_r = snapshot.val().p3m4;
+                    var p3m5_r = snapshot.val().p3m5;
+                    var p3m6_r = snapshot.val().p3m6;
+                    var p3m7_r = snapshot.val().p3m7;
+                    var p3m8_r = snapshot.val().p3m8;
+                });
+                console.log(fname_r);
+                div.textContent = fname_r;
             }
        });
     });

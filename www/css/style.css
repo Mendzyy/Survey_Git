@@ -169,3 +169,15 @@ option {
     width: 22px;
     height: 22px;
 }
+
+.datee {
+    min-width: 150px;
+    min-height: 50px;
+    border: 2px solid cornflowerblue;
+    border-radius: 11px;
+    text-align: center;
+    background-color: ghostwhite;
+    color: black;
+    padding: 0px;
+    font-size: 18px;
+}
