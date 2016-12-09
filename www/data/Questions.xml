@@ -260,7 +260,7 @@
       <input id="q8-o1" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span id='female'>Very Inaccurate</span>
+      <Span >Very Inaccurate</span>
       </div>
       <i style="color:red" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
       </div>
@@ -283,7 +283,7 @@
       <input id="q8-o2" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span id='female'>Moderately Inaccurate</span>
+      <Span >Moderately Inaccurate</span>
       </div>
       <i style="color:lightpink" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
       </div>
@@ -305,7 +305,7 @@
       <input id="q8-o3" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span id='female'>Neutral</span>
+      <Span >Neutral</span>
       </div>
       <i style="color:yellow" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
       </div>
@@ -327,7 +327,7 @@
       <input id="q8-o4" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span id='female'>Moderately Accurate</span>
+      <Span >Moderately Accurate</span>
       </div>
       <i style="color:lightgreen" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
       </div>
@@ -349,7 +349,7 @@
       <input id="q8-o5" type="radio" name="radio-group">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
-      <Span id='female'>Very Accurate</span>
+      <Span >Very Accurate</span>
       </div>
       <i style="color:green" class="radio-icon disable-pointer-events icon ion-checkmark"></i>
       </div>
