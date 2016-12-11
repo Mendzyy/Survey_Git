@@ -257,7 +257,7 @@
       <!-- start of first Ion radio -->
 
          <label class="item item-radio">
-      <input id="q8-o1" type="radio" name="radio-group">
+      <input id="q8-o1" type="radio" name="radio-group-last">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
       <Span >Very Inaccurate</span>
@@ -280,7 +280,7 @@
       <!-- start of 2nd Ion radio -->
 
          <label class="item item-radio">
-      <input id="q8-o2" type="radio" name="radio-group">
+      <input id="q8-o2" type="radio" name="radio-group-last">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
       <Span >Moderately Inaccurate</span>
@@ -302,7 +302,7 @@
       <!-- start of 3rd Ion radio -->
 
          <label class="item item-radio">
-      <input id="q8-o3" type="radio" name="radio-group">
+      <input id="q8-o3" type="radio" name="radio-group-last">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
       <Span >Neutral</span>
@@ -324,7 +324,7 @@
       <!-- start of 4th Ion radio -->
 
          <label class="item item-radio">
-      <input id="q8-o4" type="radio" name="radio-group">
+      <input id="q8-o4" type="radio" name="radio-group-last">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
       <Span >Moderately Accurate</span>
@@ -346,7 +346,7 @@
       <!-- start of 5th Ion radio -->
 
          <label class="item item-radio">
-      <input id="q8-o5" type="radio" name="radio-group">
+      <input id="q8-o5" type="radio" name="radio-group-last">
       <div class="radio-content">
       <div class="item-content disable-pointer-events" ng-transclude="">
       <Span >Very Accurate</span>

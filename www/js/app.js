@@ -88,21 +88,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
               }
           }
       });
-    var datePickerObj = {
-        setLabel: 'Set',
-        todayLabel: 'Today',
-        closeLabel: 'Close',
-        mondayFirst: false,
-        inputDate: new Date(),
-        weeksList: ["S", "M", "T", "W", "T", "F", "S"],
-        monthsList: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
-        templateType: 'popup',
-        showTodayButton: true,
-        dateFormat: 'dd MMM yyyy',
-        closeOnSelect: false,
-        disableWeekdays: [],
-        from: new Date(2015, 8, 1)
-    };
   // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/create');
 });

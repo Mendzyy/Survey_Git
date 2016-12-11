@@ -181,3 +181,42 @@ option {
     padding: 0px;
     font-size: 18px;
 }
+
+#showdata {
+    font-size: 1em;
+    width: 71.875%;
+    max-width: 960px;
+    text-align: -webkit-center;
+    margin: 0px auto;
+    padding: 3.84615384615385%;
+}
+
+.columns {
+    -moz-column-width: 11.5em;
+    -webkit-column-width: 11.5em;
+    column-width: 11.5em;
+}
+
+.columns ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.columns ul li:first-child {
+    margin-top: 0px;
+}
+
+.columns-li {
+    border: 1px solid black;
+    max-width: 400px;
+    margin-bottom: 15px;
+    text-align: -webkit-center;
+    border-radius: 10px;
+    BACKGROUND-COLOR: seashell;
+}
+
+.columns-text {
+    color: mediumseagreen;
+    font-size: larger;
+}

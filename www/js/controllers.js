@@ -2,86 +2,6 @@ angular.module('starter.controllers', ['ngSanitize'])
 
     .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
 
-    // With the new view caching in Ionic, Controllers are only called
-    // when they are recreated or on app start, instead of every page change.
-    // To listen for when this page is active (for example, to refresh data),
-    // listen for the $ionicView.enter event:
-    //$scope.$on('$ionicView.enter', function(e) {
-    //});
-
-
-    // Form data for the login modal
-        $scope.loginData = {};
-
-    // Create the login modal that we will use later
-    $ionicModal.fromTemplateUrl('templates/login.html', {
-      scope: $scope
-    }).then(function (modal) {
-      $scope.modal = modal;
-    });
-
-    // Create the reg modal that we will use later
-    $ionicModal.fromTemplateUrl('templates/registration.html', {
-      scope: $scope
-    }).then(function (modal_2) {
-      $scope.modal2 = modal_2;
-    });
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        // Triggered in the login modal to close it
-        $scope.modal.hide();
-        $scope.loggedIn = true;
-      }
-      else {
-        // Open the login modal
-        $scope.modal.show();
-        $scope.loggedIn = false;
-      }
-    });
-
-    $scope.ShowRegister = function () {
-      $scope.modal.hide();
-      $scope.modal2.show();
-      $scope.closeReg = function () {
-        $scope.modal2.hide();
-      };
-    };
-    $scope.ShowLog = function () {
-      $scope.modal.show();
-      $scope.modal2.hide();
-
-    };
-    $scope.closeLogin = function () {
-      $scope.modal.hide();
-    };
-
-    // Perform the login action when the user submits the login form
-    $scope.doLogin = function (username, password) {
-      const auth = firebase.auth();
-      const promise = auth.signInWithEmailAndPassword(username, password);
-      promise.then(function ($response) {
-      });
-      promise.catch(function (error) {
-        $scope.myErrorReg = error;
-      });
-      $timeout(function () {
-        $scope.closeLogin();
-      }, 1000);
-    };
-
-
-    $scope.doReg = function (username, password) {
-      const auth = firebase.auth();
-      const promise = auth.createUserWithEmailAndPassword(username, password);
-      promise.then(function ($response) {
-      });
-      promise.catch(function (error) {
-        $scope.myErrorReg = error;
-      });
-      $timeout(function () {
-        $scope.closeLogin();
-      }, 1000);
-    };
   })
 
 
@@ -89,7 +9,7 @@ angular.module('starter.controllers', ['ngSanitize'])
 
   })
 
-    .controller('NewCtrl', function ($scope, $state, $stateParams, $http, $sce, $ionicPopup) {
+    .controller('NewCtrl', function ($scope, $state, $stateParams, $http, $sce, $ionicPopup, $ionicSideMenuDelegate) {
         var fname = null;
         var lname = null;
         var age = null;
@@ -112,6 +32,8 @@ angular.module('starter.controllers', ['ngSanitize'])
         var p3_m6 = null;
         var p3_m7 = null;
         var p3_m8 = null;
+
+        $ionicSideMenuDelegate.canDragContent(false);
         $http.get("/data/Questions.xml").success(function (data) {
        var x2js = new X2JS();
        var jsonData = x2js.xml_str2json(data);
@@ -379,10 +301,10 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 2; num++) {
                        if (document.getElementById('q4-o' + num).checked == true) {
                            if (num == 1) {
-                               $scope.gender = "Male";
+                               gender = "Male";
                            }
                            else if (num == 2) {
-                               $scope.gender = "Female";
+                               gender = "Female";
 
                            }
                        }
@@ -416,7 +338,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_1_' + num).checked == true) {
                            p2_m1 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m1);
                        }
 
                    }
@@ -435,7 +356,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_2_' + num).checked == true) {
                            p2_m2 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m2);
                        }
 
                    }
@@ -455,7 +375,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_3_' + num).checked == true) {
                            p2_m3 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m3);
                        }
 
                    }
@@ -475,7 +394,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_4_' + num).checked == true) {
                            p2_m4 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m4);
                        }
 
                    }
@@ -495,7 +413,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_5_' + num).checked == true) {
                            p2_m5 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m5);
                        }
 
                    }
@@ -515,7 +432,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_6_' + num).checked == true) {
                            p2_m6 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m6);
                        }
 
                    }
@@ -535,7 +451,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_7_' + num).checked == true) {
                            p2_m7 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m7);
                        }
 
                    }
@@ -555,7 +470,6 @@ angular.module('starter.controllers', ['ngSanitize'])
                    for (var num = 1; num < 6; num++) {
                        if (document.getElementById('mat_8_' + num).checked == true) {
                            p2_m8 = document.getElementById('json_q7_op' + num).children[0].textContent;
-                           console.log(p2_m8);
                        }
 
                    }
@@ -757,31 +671,24 @@ angular.module('starter.controllers', ['ngSanitize'])
            $scope.Back4 = function () {
                $state.go('app.page4')
            };
-            var id = ('x' + Math.floor(Math.random() * 100 + 1) + 'Surv' + Math.floor(Math.random() * 50 + 1) + Math.floor(Math.random() * 1000 + 1));
+
            //Submit button on last page (page 5)
            $scope.Submit = function () {
                $scope.Next1();
                $scope.Next2();
                $scope.Next3();
-               console.log('It comes in submit function');
-               console.log('Datas are');
-               console.log(fname);
-               console.log(lname);
-               console.log(age);
-               console.log($scope.gender);
-               console.log(p2_m2);
-               console.log(p2_m5);
-               console.log(p3_m2);
-               console.log(p3_m6);
-
                var database = firebase.database();
-               alert('noch einmal and id is =' + id);
-               database.ref('responses/' + id).set(
+               const iddd = ('x' + Math.floor(Math.random() * 100 + 1) + 'Surv' + Math.floor(Math.random() * 50 + 1) + Math.floor(Math.random() * 1000 + 1));
+               if (Storage) {
+                   localStorage.setItem('id', iddd);
+               }
+               var idforSubmit = localStorage['id'];
+               database.ref('responses/' + idforSubmit).set(
                    {
                        First_Name: fname,
                        Last_Name: lname,
                        Age: age,
-                       Gender: $scope.gender,
+                       Gender: gender,
                        Country: country,
                        Date: date,
                        p2m1: p2_m1,
@@ -808,45 +715,64 @@ angular.module('starter.controllers', ['ngSanitize'])
 
             $scope.ShowData = function () {
                 var div = document.getElementById('showdata');
+                var idforShow = localStorage['id'];
                 var data = firebase.database();
-                var fname_r = null;
-                var lname_r = null;
-                var gender_r = null;
-                var date_r = null;
-                var p2m1_r = null;
-                var p2m2_r = null;
-                var p2m3_r = null;
-                var p3m1_r = null;
-                var p3m2_r = null;
-                var p3m3_r = null;
-                var p2m4_r = null;
-                data.ref('responses/x16Surv25543').once('value').then(function (snapshot) {
-                    fname_r = snapshot.val().First_Name;
-                    lname_r = snapshot.val().Last_Name;
-                    age_r = snapshot.val().Age;
-                    gender_r = snapshot.val().Gender;
+                data.ref('responses/' + idforShow).once('value').then(function (snapshot) {
+                    var fname_r = snapshot.val().First_Name;
+                    var lname_r = snapshot.val().Last_Name;
+                    var age_r = snapshot.val().Age;
+                    var gender_r = snapshot.val().Gender;
                     var cntry_r = snapshot.val().Country;
-                    date_r = snapshot.val().Date;
-                    p2m1_r = snapshot.val().p2m1;
-                    p2m2_r = snapshot.val().p2m2;
-                    p2m3_r = snapshot.val().p2m3;
-                    p2m4_r = snapshot.val().p2m4;
+                    var date_r = snapshot.val().Date;
+                    var p2m1_r = snapshot.val().p2m1;
+                    var p2m2_r = snapshot.val().p2m2;
+                    var p2m3_r = snapshot.val().p2m3;
+                    var p2m4_r = snapshot.val().p2m4;
                     var p2m5_r = snapshot.val().p2m5;
                     var p2m6_r = snapshot.val().p2m6;
                     var p2m7_r = snapshot.val().p2m7;
                     var p2m8_r = snapshot.val().p2m8;
-                    p3m1_r = snapshot.val().p3m1;
-                    p3m2_r = snapshot.val().p3m2;
-                    p3m3_r = snapshot.val().p3m3;
+                    var p3m1_r = snapshot.val().p3m1;
+                    var p3m2_r = snapshot.val().p3m2;
+                    var p3m3_r = snapshot.val().p3m3;
                     var p3m4_r = snapshot.val().p3m4;
                     var p3m5_r = snapshot.val().p3m5;
                     var p3m6_r = snapshot.val().p3m6;
                     var p3m7_r = snapshot.val().p3m7;
                     var p3m8_r = snapshot.val().p3m8;
+                    div.innerHTML = '<ion-label>Here is What You have added and selected. Enjoy! </ion-label><br/>'
+                        + '<ul><li class="columns-li bounceInDown animated">First Name: - <font class="columns-text">' + fname_r
+                        + '</font></li><li class="columns-li bounceInRight animated">Last Name: - <font class="columns-text">' + lname_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">Age: - <font class="columns-text">' + age_r
+                        + '</font></li><li class="columns-li bounceInRight animated">Gender: - <font class="columns-text">' + gender_r
+                        + '</font></li><li class="bounceInLeft animated columns-li">Country: - <font class="columns-text">' + cntry_r
+                        + '</font></li><li class="columns-li bounceInRight animated">Date: - <font class="columns-text">' + date_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q7_s1 + ' <font class="columns-text">' + p2m1_r
+                        + '</font></li><li class="columns-li bounceInRight animated">' + $scope.json_q7_s2 + '<font class="columns-text">' + p2m2_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q7_s3 + '<font class="columns-text">' + p2m3_r
+                        + '</font></li><li class="columns-li bounceInRight animated">' + $scope.json_q7_s4 + '<font class="columns-text">' + p2m4_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q7_s5 + '<font class="columns-text">' + p2m5_r
+                        + '</font></li><li class="columns-li bounceInRight animated">' + $scope.json_q7_s6 + '<font class="columns-text">' + p2m6_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q7_s7 + '<font class="columns-text">' + p2m7_r
+                        + '</font></li><li class="columns-li bounceInRight animated">' + $scope.json_q7_s8 + '<font class="columns-text">' + p2m8_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q8_s1 + '<font class="columns-text">' + p3m1_r
+                        + '</font></li><li class="columns-li bounceInRight animated">' + $scope.json_q8_s2 + '<font class="columns-text">' + p3m2_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q8_s3 + '<font class="columns-text">' + p3m3_r
+                        + '</font></li><li class="columns-li bounceInRight animated">' + $scope.json_q8_s4 + '<font class="columns-text">' + p3m4_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q8_s5 + '<font class="columns-text">' + p3m5_r
+                        + '</font></li><li class="columns-li bounceInRight animated">' + $scope.json_q8_s6 + '<font class="columns-text">' + p3m6_r
+                        + '</font></li><li class="columns-li bounceInLeft animated">' + $scope.json_q8_s7 + '<font class="columns-text">' + p3m7_r
+                        + '</font></li><li class="columns-li bounceInUp animated">' + $scope.json_q8_s8 + '<font class="columns-text">' + p3m8_r
+                        + '</font></li></ul>';
+
+                    if (snapshot.val().First_Name == null) {
+                        $scope.hideside = false;
+                    }
+                    else {
+                        $scope.hideside = true;
+                    }
                 });
-                console.log(fname_r);
-                console.log(lname_r);
-                div.innerHTML = 'First Name: - ' + fname_r + '<br />' + 'Last Name: - ' + lname_r + '<br />';
+
             }
        });
     });
