@@ -6,11 +6,6 @@
 <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 <style>
-.example2
-{
- background-image: url("http://www.w3schools.com/css/paper.gif");
- background-size: auto;
-}
 </style>
 </head>
 <body id="preview">
@@ -136,9 +131,9 @@ You can rate this project and comment on it as well. Appreciation will be warmly
 <p>You can also find me on:-</p>
 </li>
 <li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://github.com/Mendzyy"><img style="height: 25px !important; width: 25px; vertical-align: middle; border: 0;" title="Github" src="https://raw.githubusercontent.com/steppinlo/steppinlo.github.io/master/imgs/github.png" alt="Github" /></a></li>
-<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.linkedin.com/in/chirag-mendapara-25a33a118/"><img style="height: 25px !important; width: 25px; vertical-align: middle; border: 0;" title="Linkedin" src="http://yovanverma.in/images/linkedin.svg" alt="Linkedin" /></a></li>
-<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.facebook.com/Mendzyy"><img style="width: 25px; vertical-align: middle; height: 25px !important; border: 0;" title="Facebook" src="http://yovanverma.in/images/facebook.svg" alt="Facebook" /></a></li>
-<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.instagram.com/chiragmendapara/"><img style="width: 25px; height: 25px !important; vertical-align: middle; border: 0;" title="Instagram" src="http://yovanverma.in/images/instagram.svg" alt="Instagram" /></a></li>
+<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.linkedin.com/in/chirag-mendapara-25a33a118/"><img style="height: 25px !important; width: 25px; vertical-align: middle; border: 0;" title="Linkedin" src="http://xtechsk.ca/wp-content/uploads/2014/07/linkedin.png" alt="Linkedin" /></a></li>
+<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.facebook.com/Mendzyy"><img style="width: 25px; vertical-align: middle; height: 25px !important; border: 0;" title="Facebook" src="http://www.androidapksfree.com/wp-content/uploads/wordpress-popular-posts/1095-featured-25x25.png" alt="Facebook" /></a></li>
+<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.instagram.com/chiragmendapara/"><img style="width: 25px; height: 25px !important; vertical-align: middle; border: 0;" title="Instagram" src="http://www.androidapksfree.com/wp-content/uploads/wordpress-popular-posts/3662-featured-25x25.png" alt="Instagram" /></a></li>
 </ul>
 <div style="text-align: center; padding: 20px 0 0 0; font-size: 12px;">&copy; 2016 All Rights Reserved | Chirag Mendapara</div>
 </body>
