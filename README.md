@@ -116,10 +116,10 @@ to continue installation of Ionic.<br />
 <td style="padding-left:20px">
 <font style="font-family: 'Pinyon Script', cursive;font-size:30px">Chirag Mendapara</font>
 <br/><br/>
-<pre><code> Hello Everyone, My name is Chirag Mendapara. I am an Indian. I live currently in Germany. <br/>
-I am currently studying Applied Computer Science in SRH Hochschule Heidelberg. This is my Academic Project. <br/>
-You can rate this project and comment on it as well. Appreciation will be warmly welcomed! Say Hello to <a style="text-decoration:none" href="mailto:chiragmendapara.cm@gmail.com?Subject=Hello Chirag"> Me </a>
-</code></pre>
+<font> Hello Everyone, My name is Chirag Mendapara. I come from India.<br/> I live currently in Germany. <br/>
+I am currently studying Applied Computer Science in SRH Hochschule Heidelberg. <br/>This is my Academic Project. <br/>
+You can rate this project and comment on it as well.<br/> Appreciation will be warmly welcomed! <br/>Say Hello to <a style="text-decoration:none" href="mailto:chiragmendapara.cm@gmail.com?Subject=Hello Chirag"> Me </a>
+</font>
 </td>
 </tr>
 </tbody></table>
