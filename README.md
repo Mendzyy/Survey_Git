@@ -111,15 +111,15 @@ to continue installation of Ionic.<br />
 <tbody>
 <tr>
 <td>
-<img class="img-responsive" style="text-align: center; float: left;" title="Chirag Mendapara" src="C:\Users\D067733\Downloads\PIC.jpg" alt="Chirag Mendapara" width="156" height="186" />
+<img class="img-responsive" style="text-align: center; float: left;" title="Chirag Mendapara" src="Pic.JPG" alt="Chirag Mendapara" width="156" height="186" />
 </td>
 <td style="padding-left:20px">
 <font style="font-family: 'Pinyon Script', cursive;font-size:30px">Chirag Mendapara</font>
 <br/><br/>
-<font style="font-family:'Parisienne', cursive;;font-size:20px;text-align:center">Hello Everyone, My name is Chirag Mendapara. I am an Indian. I live currently in Germany. <br/>
+<pre><code> Hello Everyone, My name is Chirag Mendapara. I am an Indian. I live currently in Germany. <br/>
 I am currently studying Applied Computer Science in SRH Hochschule Heidelberg. This is my Academic Project. <br/>
 You can rate this project and comment on it as well. Appreciation will be warmly welcomed! Say Hello to <a style="text-decoration:none" href="mailto:chiragmendapara.cm@gmail.com?Subject=Hello Chirag"> Me </a>
-</font>
+</code></pre>
 </td>
 </tr>
 </tbody></table>
