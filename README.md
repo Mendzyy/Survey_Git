@@ -1,8 +1,16 @@
-
-<!DOCTYPE html><html><head><meta charset="utf-8">
+<html>
+<head>
+<meta charset="utf-8">
 <title>
 </title>
+<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 <style>
+.example2
+{
+ background-image: url("http://www.w3schools.com/css/paper.gif");
+ background-size: auto;
+}
 </style>
 </head>
 <body id="preview">
@@ -102,18 +110,36 @@ to continue installation of Ionic.<br />
 <p>Paste your code snippet in the <strong>app.js</strong> file.</p>
 <p><em><strong>Hurray! There You Go! Start taking Surveys</strong></em></p>
 <p style="text-align: center; font-weight: bold; font-size: 17px;"><em>About Developer</em></p>
-<div class="example2">
-<div class="Chirag-photo"><center><img class="img-responsive" style="text-align: center; float: left;" title="Chirag Mendapara" src="Chirag_round.jpg" alt="Chirag Mendapara" width="156" height="156" /></center></div>
-<ul style="text-align: center; margin: 40px 0; padding: 0; list-style: none;">
-<li style="display: inline-block; padding: 0 0 0 20px;">
+<hr/>
+<div class="Chirag-photo">
+<table style="border:none">
+<tbody>
+<tr>
+<td>
+<img class="img-responsive" style="text-align: center; float: left;" title="Chirag Mendapara" src="C:\Users\D067733\Downloads\PIC.jpg" alt="Chirag Mendapara" width="156" height="186" />
+</td>
+<td style="padding-left:20px">
+<font style="font-family: 'Pinyon Script', cursive;font-size:30px">Chirag Mendapara</font>
+<br/><br/>
+<font style="font-family:'Parisienne', cursive;;font-size:20px;text-align:center">Hello Everyone, My name is Chirag Mendapara. I am an Indian. I live currently in Germany. <br/>
+I am currently studying Applied Computer Science in SRH Hochschule Heidelberg. This is my Academic Project. <br/>
+You can rate this project and comment on it as well. Appreciation will be warmly welcomed! Say Hello to <a style="text-decoration:none" href="mailto:chiragmendapara.cm@gmail.com?Subject=Hello Chirag"> Me </a>
+</font>
+</td>
+</tr>
+</tbody></table>
+</div>
+<br/><br/>
+<ul style="display: inline-block !important;text-align: center; margin: 40px 0; padding: 0; list-style: none;">
+<li style="display: inline-block !important; padding: 0 0 0 20px;">
+<hr/>
 <p>You can also find me on:-</p>
 </li>
-<li style="display: inline-block; padding: 0 0 0 25px;"><a href="https://github.com/Mendzyy"><img style="height: 25px; width: 25px; vertical-align: middle; border: 0;" title="Github" src="https://raw.githubusercontent.com/steppinlo/steppinlo.github.io/master/imgs/github.png" alt="Github" /></a></li>
-<li style="display: inline-block; padding: 0 0 0 25px;"><a href="https://www.linkedin.com/in/chirag-mendapara-25a33a118/"><img style="height: 25px; width: 25px; vertical-align: middle; border: 0;" title="Linkedin" src="http://yovanverma.in/images/linkedin.svg" alt="Linkedin" /></a></li>
-<li style="display: inline-block; padding: 0 0 0 25px;"><a href="https://www.facebook.com/Mendzyy"><img style="width: 25px; vertical-align: middle; height: 25px; border: 0;" title="Facebook" src="http://yovanverma.in/images/facebook.svg" alt="Facebook" /></a></li>
-<li style="display: inline-block; padding: 0 0 0 25px;"><a href="https://www.instagram.com/chiragmendapara/"><img style="width: 25px; height: 25px; vertical-align: middle; border: 0;" title="Instagram" src="http://yovanverma.in/images/instagram.svg" alt="Instagram" /></a></li>
+<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://github.com/Mendzyy"><img style="height: 25px !important; width: 25px; vertical-align: middle; border: 0;" title="Github" src="https://raw.githubusercontent.com/steppinlo/steppinlo.github.io/master/imgs/github.png" alt="Github" /></a></li>
+<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.linkedin.com/in/chirag-mendapara-25a33a118/"><img style="height: 25px !important; width: 25px; vertical-align: middle; border: 0;" title="Linkedin" src="http://yovanverma.in/images/linkedin.svg" alt="Linkedin" /></a></li>
+<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.facebook.com/Mendzyy"><img style="width: 25px; vertical-align: middle; height: 25px !important; border: 0;" title="Facebook" src="http://yovanverma.in/images/facebook.svg" alt="Facebook" /></a></li>
+<li style="display: inline-block !important; padding: 0 0 0 25px;"><a href="https://www.instagram.com/chiragmendapara/"><img style="width: 25px; height: 25px !important; vertical-align: middle; border: 0;" title="Instagram" src="http://yovanverma.in/images/instagram.svg" alt="Instagram" /></a></li>
 </ul>
 <div style="text-align: center; padding: 20px 0 0 0; font-size: 12px;">&copy; 2016 All Rights Reserved | Chirag Mendapara</div>
-</div>
 </body>
 </html>
