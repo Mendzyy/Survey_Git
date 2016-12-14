@@ -117,7 +117,7 @@ to continue installation of Ionic.<br />
 <font style="font-family: 'Pinyon Script', cursive;font-size:30px">Chirag Mendapara</font>
 <br/><br/>
 <font> Hello Everyone, My name is Chirag Mendapara. I come from India.<br/> I live currently in Germany. <br/>
-I am currently studying Applied Computer Science in SRH Hochschule Heidelberg. <br/>This is my Academic Project. <br/>
+I am currently studying Applied Computer Science in SRH Hochschule Heidelberg. <br/>This is my Academic Project developed under the supervision of Mr. Christoph Hahn.<br/>
 You can rate this project and comment on it as well.<br/> Appreciation will be warmly welcomed! <br/>Say Hello to <a style="text-decoration:none" href="mailto:chiragmendapara.cm@gmail.com?Subject=Hello Chirag"> Me </a>
 </font>
 </td>
