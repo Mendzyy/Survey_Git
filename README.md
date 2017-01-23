@@ -38,8 +38,8 @@
 <hr />
 <h4><a id="___Powered_By____17"></a><strong><em>Powered By:&ndash;</em></strong></h4>
 
-<a href="http://ionicframework.com"><img src="https://media.licdn.com/media/AAEAAQAAAAAAAANfAAAAJDhiY2VjZmQ5LTk1OWMtNDU0MS04YjNmLTZjZGNmNTliNTY3OA.png" alt="" /></a>
- <a href="https://firebase.google.com"><img src="http://www.thesiliconvalleyinstitute.com/img/home/partners/logo7.png" alt="" /></a> <a href="https://www.javascript.com/">
+<a href="https://firebase.google.com"><img src="https://media.licdn.com/media/AAEAAQAAAAAAAANfAAAAJDhiY2VjZmQ5LTk1OWMtNDU0MS04YjNmLTZjZGNmNTliNTY3OA.png" alt="" /></a>
+ <a href="http://ionicframework.com"><img src="http://www.thesiliconvalleyinstitute.com/img/home/partners/logo7.png" alt="" /></a> <a href="https://www.javascript.com/">
  <img src="https://simpledevcode.files.wordpress.com/2014/06/logo_javascript-e1416863188233.png?w=50&amp;h=50&amp;crop=1" alt="" />
  </a> <a href="https://www.w3.org/TR/html5/"><img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/p/8/005/064/307/0290792.png" alt="" />
  </a>
