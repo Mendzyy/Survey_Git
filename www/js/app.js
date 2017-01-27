@@ -20,14 +20,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       StatusBar.styleDefault();
     }
 
-      var config = {
-          apiKey: "AIzaSyBcwqMKs0Rdcg0KVJfWavy0Q4D-LhEtIc8",
-          authDomain: "surv-b583e.firebaseapp.com",
-          databaseURL: "https://surv-b583e.firebaseio.com",
-          storageBucket: "surv-b583e.appspot.com",
-          messagingSenderId: "253921945063"
-      };
-      firebase.initializeApp(config);
+     var config = {
+    apiKey: "<API_KEY>",
+    authDomain: "<PROJECT_ID>.firebaseapp.com",
+    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+    storageBucket: "<BUCKET>.appspot.com",
+    messagingSenderId: "<SENDER_ID>",
+  };
+  firebase.initializeApp(config);
   });
 })
 
